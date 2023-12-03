@@ -51,9 +51,8 @@ the circuit of **Part 2**.
 | R3 = 20K     |           |           |           |                | Brown         |
 | R4 = 40.2K   |           |           |           |                | Brown         |
 | R5 = 40.2K   |           |           |           |                | Brown         |
-<br> <br>
 
-
+<br>
 ----
 
 
@@ -75,51 +74,50 @@ height="2.711088145231846in"}
 > ![](media/image5.jpeg){width="5.113047900262467in"
 > height="3.8350371828521435in"}
 >
+
+
 * Step 3: Connect a 5V power supply to the breadboard (use bottom 2
 > rows)
 >
 > Step 4: Connect a voltmeter to the DAC out wire with respect to GND.
->
+
 > Step 5: Observe the voltage fluctuations as you flip the switches.
-> Fill out the DAC Vout table for each possible input code.
 
 
-| **S3** | **S2** | **S1** | **S0** |   | **DAC Vout** | **Step Size** |
-|--------|--------|--------|--------|---|--------------|---------------|
-| 0      | 0      | 0      | 0      |   |              | ------------  |
-| 0      | 0      | 0      | 1      |   |              |               |
-| 0      | 0      | 1      | 0      |   |              |               |
-| 0      | 0      | 1      | 1      |   |              |               |
-| 0      | 1      | 0      | 0      |   |              |               |
-| 0      | 1      | 0      | 1      |   |              |               |
-| 0      | 1      | 1      | 0      |   |              |               |
-| 0      | 1      | 1      | 1      |   |              |               |
-| 1      | 0      | 0      | 0      |   |              |               |
-| 1      | 0      | 0      | 1      |   |              |               |
-| 1      | 0      | 1      | 0      |   |              |               |
-| 1      | 0      | 1      | 1      |   |              |               |
-| 1      | 1      | 0      | 0      |   |              |               |
-| 1      | 1      | 0      | 1      |   |              |               |
-| 1      | 1      | 1      | 0      |   |              |               |
-| 1      | 1      | 1      | 1      |   |              |               |
+>   #### Fill out the DAC Vout table for each possible input code.
+
+>    |**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** |
+>    |------|------|------|------|-|--------------|---------------|
+>    | 0    | 0    | 0    | 0    | |              |               |
+>    | 0    | 0    | 0    | 1    | |              |               |
+>    | 0    | 0    | 1    | 0    | |              |               |
+>    | 0    | 0    | 1    | 1    | |              |               |
+>    | 0    | 1    | 0    | 0    | |              |               |
+>    | 0    | 1    | 0    | 1    | |              |               |
+>    | 0    | 1    | 1    | 0    | |              |               |
+>    | 0    | 1    | 1    | 1    | |              |               |
+>    | 1    | 0    | 0    | 0    | |              |               |
+>    | 1    | 0    | 0    | 1    | |              |               |
+>    | 1    | 0    | 1    | 0    | |              |               |
+>    | 1    | 0    | 1    | 1    | |              |               |
+>    | 1    | 1    | 0    | 0    | |              |               |
+>    | 1    | 1    | 0    | 1    | |              |               |
+>    | 1    | 1    | 1    | 0    | |              |               |
+>    | 1    | 1    | 1    | 1    | |              |               |
+>   #### (40 pts)
 
 
-> DAC Vout Table (40 Points)
 
-Part 3. Conclusions statement.
+## Part 3. Conclusions statement.
 
 > Write a brief conclusions statement that discusses all of the original
 > purposes of the lab. Please use complete sentences and correct grammar
 > to express your thoughts on how you fulfilled the purposes of the lab:
 
-Purposes (repeated):
-====================
-
+## Purposes (repeated):
 -   Become familiar with lab equipment such as digital multimeters and
     power supplies.
-
 -   Learn how to breadboard schematic diagrams.
-
 -   Make comparisons between analog and digital circuits.
 
 > You might have something to say about the first two bullets, but the
@@ -141,16 +139,11 @@ Purposes (repeated):
 
 (The conclusions box will expand as you write)
 
-+--------------+
-| Conclusions: |
-| ------------ |
-+--------------+
-
-Conclusion Statement (40 Points)
---------------------------------
+# Conclusions:
+## Conclusion Statement (40 Points)
 
 Congratulations, you have completed Lab!
-----------------------------------------
+
 
 You may now submit this document.
----------------------------------
+
