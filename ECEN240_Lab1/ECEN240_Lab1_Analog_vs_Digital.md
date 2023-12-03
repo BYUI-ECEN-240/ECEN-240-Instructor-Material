@@ -59,7 +59,7 @@ the circuit of **Part 2**.
 
 
 <p style="text-indent:50px">
-<img src="media/resistor_color_code.png" width="400" align="middle">
+<img src="media/resistor_color_code.png" width="800" align="middle">
 </p>
 <p style="text-indent:50px">
 <b> Resistor Color Band Chart </b>
