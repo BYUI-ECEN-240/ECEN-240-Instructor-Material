@@ -41,8 +41,9 @@ the circuit of **Part 2**.
 
 ### Part 2. Build a simple 4-bit Digital to Analog Converter (DAC) and measure the output voltage
 
-* Step 1: Using the resistor color band chart, fill in the following identifying bands for the resistors in the table
+#### Step 1: Using the resistor color band chart, fill in the following identifying bands for the resistors in the table
 
+<div style="margin-left: 40px">
 
 | **Resistor** | **Band1** | **Band2** | **Band3** | **Multiplier** | **Tolerance** |
 |--------------|-----------|-----------|-----------|----------------|---------------|
@@ -52,60 +53,63 @@ the circuit of **Part 2**.
 | R4 = 40.2K   |           |           |           |                | Brown         |
 | R5 = 40.2K   |           |           |           |                | Brown         |
 
+</div>
 <br>
 ----
 
 
 
 <p style="text-indent:50px">
-<img src="media/resistor_color_code.png" width="800" align="middle">
+<img src="media/resistor_color_code.png" width="600" align="middle">
 </p>
 <p style="text-indent:50px">
 <b> Resistor Color Band Chart </b>
 </p>
 
-* Step 2: Build the simple 4-bit DAC as shown in the schematic diagram.  You may need to cut and strip wires in order to complete the project.
+#### Step 2: Build the simple 4-bit DAC as shown in the schematic diagram.  You may need to cut and strip wires in order to complete the project.
 
-![](media/image4.png){width="4.730914260717411in"
-height="2.711088145231846in"}
+<p style="text-indent:50px">
+<img src="media/Simple_4bit_DAC_Schematic.png" width="600" align="middle">
+</p>
+<p style="text-indent:50px">
+<b> Completed 4-bit DAC Built </b>
+</p>
+<br>
+<p style="text-indent:50px">
+<img src="media/DAC_Complete.jpeg"  width="600" align="middle">
+</p>
+<p style="text-indent:50px">
+<b> Completed 4-bit DAC Built </b>
+</p>
 
-> Schematic of a simple 4-bit DAC
->
-> ![](media/image5.jpeg){width="5.113047900262467in"
-> height="3.8350371828521435in"}
->
+#### Step 3: Connect a 5V power supply to the breadboard (use bottom 2 rows)
 
+#### Step 4: Connect a voltmeter to the DAC out wire with respect to GND.
 
-* Step 3: Connect a 5V power supply to the breadboard (use bottom 2
-> rows)
->
-> Step 4: Connect a voltmeter to the DAC out wire with respect to GND.
+#### Step 5: Observe the voltage fluctuations as you flip the switches.
 
-> Step 5: Observe the voltage fluctuations as you flip the switches.
+<div style="margin-left: 40px">
 
-
->   #### Fill out the DAC Vout table for each possible input code.
-
->    |**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** |
->    |------|------|------|------|-|--------------|---------------|
->    | 0    | 0    | 0    | 0    | |              |               |
->    | 0    | 0    | 0    | 1    | |              |               |
->    | 0    | 0    | 1    | 0    | |              |               |
->    | 0    | 0    | 1    | 1    | |              |               |
->    | 0    | 1    | 0    | 0    | |              |               |
->    | 0    | 1    | 0    | 1    | |              |               |
->    | 0    | 1    | 1    | 0    | |              |               |
->    | 0    | 1    | 1    | 1    | |              |               |
->    | 1    | 0    | 0    | 0    | |              |               |
->    | 1    | 0    | 0    | 1    | |              |               |
->    | 1    | 0    | 1    | 0    | |              |               |
->    | 1    | 0    | 1    | 1    | |              |               |
->    | 1    | 1    | 0    | 0    | |              |               |
->    | 1    | 1    | 0    | 1    | |              |               |
->    | 1    | 1    | 1    | 0    | |              |               |
->    | 1    | 1    | 1    | 1    | |              |               |
->   #### (40 pts)
-
+#### Fill out the DAC Vout table for each possible input code.  (40 pts)
+|**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** |
+|----|----|----|----|-|--------------|---------------|
+| 0  | 0  | 0  | 0  | |              |               |
+| 0  | 0  | 0  | 1  | |              |               |
+| 0  | 0  | 1  | 0  | |              |               |
+| 0  | 0  | 1  | 1  | |              |               |
+| 0  | 1  | 0  | 0  | |              |               |
+| 0  | 1  | 0  | 1  | |              |               |
+| 0  | 1  | 1  | 0  | |              |               |
+| 0  | 1  | 1  | 1  | |              |               |
+| 1  | 0  | 0  | 0  | |              |               |
+| 1  | 0  | 0  | 1  | |              |               |
+| 1  | 0  | 1  | 0  | |              |               |
+| 1  | 0  | 1  | 1  | |              |               |
+| 1  | 1  | 0  | 0  | |              |               |
+| 1  | 1  | 0  | 1  | |              |               |
+| 1  | 1  | 1  | 0  | |              |               |
+| 1  | 1  | 1  | 1  | |              |               |
+</div>
 
 
 ## Part 3. Conclusions statement.
@@ -137,7 +141,6 @@ height="2.711088145231846in"}
     that the new DAC would need to produce 64 different levels instead
     of only 16, so how many digital bits would be required?
 
-(The conclusions box will expand as you write)
 
 # Conclusions:
 ## Conclusion Statement (40 Points)
