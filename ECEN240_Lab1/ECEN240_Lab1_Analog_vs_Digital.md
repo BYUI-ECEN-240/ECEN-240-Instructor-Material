@@ -1,11 +1,8 @@
 # ECEN 240 Lab 1 -- Analog vs Digital
-----
 
-### Name:  [ ]
+### NAME :  <span style="color:red;">[insert your name here] </span>
 
 ## Purposes:
-----
-
 -   Become familiar with lab equipment such as digital multimeters and
     power supplies.
 
@@ -14,11 +11,11 @@
 -   Make comparisons between analog and digital circuits.
 
 ## Procedure:
-----
 
 ### Part 1. Build an analog voltage output generator with a potentiometer
-> and observe the output variation. This circuit will be compared with
-> the circuit of part 2.
+
+Build the following and observe the output variation. This circuit will be compared with
+the circuit of **Part 2**.
 
 -   Insert a potentiometer in a breadboard
 -   Connect the outer pins to 5V and GND
@@ -27,35 +24,48 @@
 -   Connect a voltmeter to the output wire and the GND
 -   Observe the voltage output variation as you turn the knob.
 
-<img src="media/Pot_Schematic.png" width="2.6in" height="auto">
->
-> Analog Voltage Generator Schematic
->
-> ![](media/image2.jpeg){width="3.1407108486439195in" height="2.5576563867016624in">
->
-> Breadboarding the analog voltage generator
+<p style="text-indent:50px">
+<img src="media/Pot_Schematic.png" width="300" align="middle">
+</p>
+<p style="text-indent:50px">
+<b>Analog Voltage Generator Schematic</b>
+</p>
 
-Part 2. Build a simple 4-bit Digital to Analog Converter (DAC) and
-measure the output voltage
+<p style="text-indent:50px">
+<img src="media/Pot_Complete.jpeg" width="300" align="middle">
+</p>
+<p style="text-indent:50px">
+<b> Breadboarding the analog voltage generator </b>
+</p>
 
-> Step 1: Using the resistor color band chart, identify the following
-> resistor color bands:
 
-  Resistor     Band1    Band2   Band3   Multiplier   Tolerance
-  ------------ -------- ------- ------- ------------ -----------
-  R1 = 4.99K   Yellow   White   White   Brown        Brown
-  R2 = 10K                                           Brown
-  R3 = 20K                                           Brown
-  R4 = 40.2K                                         Brown
-  R5 = 40.2K                                         Brown
+### Part 2. Build a simple 4-bit Digital to Analog Converter (DAC) and measure the output voltage
 
-> ![](media/image3.png){width="3.7493503937007873in"
-> height="3.490544619422572in"}
->
-> Resistor Color Band Chart
->
-> Step 2: Build the simple 4-bit DAC as shown in the schematic diagram.
-> You may need to cut and strip wires in order to complete the project.
+* Step 1: Using the resistor color band chart, fill in the following identifying bands for the resistors in the table
+
+
+| **Resistor** | **Band1** | **Band2** | **Band3** | **Multiplier** | **Tolerance** |
+|--------------|-----------|-----------|-----------|----------------|---------------|
+| R1 = 4.99K   | Yellow    | White     | White     | Brown          | Brown         |
+| R2 = 10K     |           |           |           |                | Brown         |
+| R3 = 20K     |           |           |           |                | Brown         |
+| R4 = 40.2K   |           |           |           |                | Brown         |
+| R5 = 40.2K   |           |           |           |                | Brown         |
+<br> <br>
+
+
+----
+
+
+
+<p style="text-indent:50px">
+<img src="media/resistor_color_code.png" width="400" align="middle">
+</p>
+<p style="text-indent:50px">
+<b> Resistor Color Band Chart </b>
+</p>
+
+* Step 2: Build the simple 4-bit DAC as shown in the schematic diagram.  You may need to cut and strip wires in order to complete the project.
 
 ![](media/image4.png){width="4.730914260717411in"
 height="2.711088145231846in"}
@@ -65,7 +75,7 @@ height="2.711088145231846in"}
 > ![](media/image5.jpeg){width="5.113047900262467in"
 > height="3.8350371828521435in"}
 >
-> Step 3: Connect a 5V power supply to the breadboard (use bottom 2
+* Step 3: Connect a 5V power supply to the breadboard (use bottom 2
 > rows)
 >
 > Step 4: Connect a voltmeter to the DAC out wire with respect to GND.
