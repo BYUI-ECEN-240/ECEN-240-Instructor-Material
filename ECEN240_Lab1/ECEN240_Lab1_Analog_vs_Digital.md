@@ -17,12 +17,13 @@
 Build the following and observe the output variation. This circuit will be compared with
 the circuit of **Part 2**.
 
--   Insert a potentiometer in a breadboard
--   Connect the outer pins to 5V and GND
--   Connect the middle pin to an output wire
--   Connect a 5V power supply to the breadboard (use bottom 2 rows)
--   Connect a voltmeter to the output wire and the GND
--   Observe the voltage output variation as you turn the knob.
+1.   Insert a potentiometer in a breadboard
+2.   Connect the outer pins to 5V and GND
+3.   Connect the middle pin to an output wire
+4.   Connect a 5V power supply to the breadboard (use bottom 2 rows)
+5.   Connect a voltmeter to the output wire and the GND
+6.   Observe the voltage output variation as you turn the knob.
+
 
 <p style="text-indent:50px">
 <img src="media/Pot_Schematic.png" width="300" align="middle">
@@ -91,6 +92,7 @@ the circuit of **Part 2**.
 <div style="margin-left: 40px">
 
 #### Fill out the DAC Vout table for each possible input code.  (40 pts)
+<span style="color:red;">
 |**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** |
 |----|----|----|----|-|--------------|---------------|
 | 0  | 0  | 0  | 0  | |              |               |
@@ -109,20 +111,20 @@ the circuit of **Part 2**.
 | 1  | 1  | 0  | 1  | |              |               |
 | 1  | 1  | 1  | 0  | |              |               |
 | 1  | 1  | 1  | 1  | |              |               |
+</span>
 </div>
 
 
-## Part 3. Conclusions statement.
+## Part 3. Conclusions statement. (40 Points)
 
-> Write a brief conclusions statement that discusses all of the original
-> purposes of the lab. Please use complete sentences and correct grammar
-> to express your thoughts on how you fulfilled the purposes of the lab:
+Write a brief conclusions statement that discusses all of the original
+purposes of the lab. Please use complete sentences and correct grammar
+to express your thoughts on how you fulfilled the purposes of the lab
 
-## Purposes (repeated):
--   Become familiar with lab equipment such as digital multimeters and
-    power supplies.
--   Learn how to breadboard schematic diagrams.
--   Make comparisons between analog and digital circuits.
+**Purposes (repeated)** 
+- Become familiar with lab equipment such as digital multimeters and power supplies.
+- Learn how to breadboard schematic diagrams.
+- Make comparisons between analog and digital circuits.
 
 > You might have something to say about the first two bullets, but the
 > 3^rd^ bullet deserves the most attention. Specifically, make sure to
@@ -142,11 +144,12 @@ the circuit of **Part 2**.
     of only 16, so how many digital bits would be required?
 
 
-# Conclusions:
-## Conclusion Statement (40 Points)
+---
 
-Congratulations, you have completed Lab!
-
-
-You may now submit this document.
+```
+FILL IN YOUR CONCLUSION STATEMENTS HERE
+```
+---
+### Congratulations, you have completed Lab!
+Save and you may now submit this markdown document on Canvas.
 
