@@ -124,9 +124,11 @@ to express your thoughts on how you fulfilled the purposes of the lab
 - Learn how to breadboard schematic diagrams.
 - Make comparisons between analog and digital circuits.
 
-> You might have something to say about the first two bullets, but the
-> 3^rd^ bullet deserves the most attention. Specifically, make sure to
-> address these questions:
+
+     In your conclusion statements, talk about the first two bullets,
+    but the 3<sup>rd</sup> bullet deserves the most attention. <br>
+    Specifically, make sure to address these questions:
+
 
 1.  Is the output of a potentiometer truly an analog output?
 
@@ -145,7 +147,7 @@ to express your thoughts on how you fulfilled the purposes of the lab
 ---
 
 ```
-FILL IN YOUR CONCLUSION STATEMENTS HERE
+[ FILL IN YOUR CONCLUSION STATEMENTS HERE ]
 ```
 ---
 ### Congratulations, you have completed Lab!
