@@ -92,10 +92,9 @@ the circuit of **Part 2**.
 <div style="margin-left: 40px">
 
 #### Fill out the DAC Vout table for each possible input code.  (40 pts)
-<span style="color:red;">
-|**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** |
-|----|----|----|----|-|--------------|---------------|
-| 0  | 0  | 0  | 0  | |              |               |
+|**S3**|**S2**|**S1**|**S0**| | **DAC Vout** | **Step Size** ||
+|----|----|----|----|-|--------------|---------------|----------|
+| 0  | 0  | 0  | 0  | |              |               |<== Fill in values
 | 0  | 0  | 0  | 1  | |              |               |
 | 0  | 0  | 1  | 0  | |              |               |
 | 0  | 0  | 1  | 1  | |              |               |
@@ -110,8 +109,7 @@ the circuit of **Part 2**.
 | 1  | 1  | 0  | 0  | |              |               |
 | 1  | 1  | 0  | 1  | |              |               |
 | 1  | 1  | 1  | 0  | |              |               |
-| 1  | 1  | 1  | 1  | |              |               |
-</span>
+| 1  | 1  | 1  | 1  | |              |               |  
 </div>
 
 
