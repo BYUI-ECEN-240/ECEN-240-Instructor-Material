@@ -1,76 +1,89 @@
-ECEN 240 Lab 2 -- Logic Inverters
-=================================
+# ECEN 240 Lab 2 -- Logic Inverters
 
-Name:
-=====
+### NAME :  <span style="color:red;">[insert your name here] </span>
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-============================================================================================================================================================
-
-Purposes:
-=========
+## Purposes:
 
 -   Learn about the construction and characteristics of a CMOS inverter
-
 -   Measure and record the input and output characteristics of an
     inverter
-
 -   Find the threshold voltage of the inverter
-
 -   Gain experience using the 74HC04 and the 74HC05 inverter chips
 
-Procedure:
-==========
+## Procedure:
 
-Part 1 -- Discrete CMOS Inverters
+### Part 1 -- Discrete CMOS Inverters
 
-> 1\. Construct the inverter shown in the schematic of Figure 1. Use the
-> left side of the breadboard.
+1.)   Construct the inverter shown in the schematic of Figure 1.
+Use the left side of the breadboard.
 
 ![Diagram, schematic Description automatically
 generated](media/image1.png){width="3.4770713035870515in"
 height="2.5583803587051617in"}
 
+<p style="text-indent:50px">
+<img src="media/Inverter.png" width="300" align="middle">
+<p>
+<p style="text-indent:150px">
+<b>
 Figure 1 - CMOS Inverter
+</b>
+</p>
 
-![Diagram Description automatically
-generated](media/image2.png){width="1.7911548556430446in"
-height="1.4060859580052494in"}
 
-Figure 2 - Pin assignments of the TP2104 (PMOS) and VN2106 (NMOS)
-Transistors
 
-> 2\. Add the potentiometer circuit shown in Figure 3 (also used in Lab
-> 1) and connect its middle pin to the input of the inverter.
+<p style="text-indent:150px">
+<img src="media/to-92.png" width="200" align="middle">
+<p>
+<p style="text-indent:150px">
+<b>
+Figure 2 - Pin assignments of the TP2104 (PMOS) and VN2106 (NMOS) Transistors
+</b>
+</p>
 
-![Diagram, schematic Description automatically
-generated](media/image3.png){width="3.3058825459317585in"
-height="2.673669072615923in"}
 
+
+
+2. Add the potentiometer circuit shown in Figure 3 (also used in Lab 1) and connect its middle pin to the input of the inverter.
+
+<p style="text-indent:150px">
+<img src="media/Potentiometer.png" width="300" align="middle">
+<p>
+<p style="text-indent:150px">
+<b>
 Figure 3 -- Potentiometer circuit used for inverter input voltage
+</b>
+</p>
 
-![A picture containing diagram Description automatically
-generated](media/image4.jpeg){width="4.0743875765529305in"
-height="3.055790682414698in"}
 
+<p style="text-indent:150px">
+<img src="media/InverterCircuit.jpeg" width="300" align="middle">
+<p>
+<p style="text-indent:150px">
+<b>
 Figure 4 -- Completed Inverter Circuit with a Potentiometer as the Input
+</b>
+</p>
 
-> 3\. Verify that the inverter circuit is working correctly by adjusting
-> the knob of the potentiometer while monitoring the input and output
-> with a voltmeter (if the input is near zero Volts, the output should
-> be near 5 Volts and vice versa).
->
-> 4\. Make the necessary voltage measurements to complete Table 1. To do
-> this:
 
--   Connect the voltmeter to the input of the inverter and adjust the
-    potentiometer knob until it is close to the target "Vin" value on
-    the table.
+3. Verify that the inverter circuit is working correctly by adjusting
+the knob of the potentiometer while monitoring the input and output
+with a voltmeter (if the input is near zero Volts, the output should
+be near 5 Volts and vice versa).
 
--   Without changing the potentiometer, connect the meter to the output
-    of the inverter and record the "Vout" value.
+4. Make the necessary voltage measurements to complete Table 1. To do
+this:
 
--   Repeat for the next input voltage until done
+<div style="margin-left: 40px">
+
+* Connect the voltmeter to the input of the inverter and adjust the 
+potentiometer knob until it is close to the target "Vin" value on the table.
+
+* Without changing the potentiometer, connect the meter to the output of the inverter and record the "Vout" value.
+
+* Repeat for the next input voltage until done
+
+</div>
 
   Inverter Vin (Volts)   Inverter Vout (Volts)
   ---------------------- -----------------------
@@ -108,7 +121,7 @@ Table 1 -- Inverter Input vs Inverter Output
 
 \*\*\*\*\* Take Lab 2 Quiz 1 \*\*\*\*\*
 
-Part 2. Integrated Circuit Logic inverters.
+### Part 2. Integrated Circuit Logic inverters.
 
 > 1\. Keeping the transistor inverter circuit on the left of the
 > breadboard, build the circuit shown in the schematic diagram of Figure
@@ -165,37 +178,25 @@ Figure 7 -- Complete 3 inverter Circuit
 
 > \*\*\*\*\* Take Lab 2 Quiz 2 \*\*\*\*\*
 
-Part 3. Conclusions statement.
+### Part 3. Conclusions statement
 
 > Write a brief conclusions statement that discusses all of the original
 > purposes of the lab. Please discuss your observations on all four
 > bullets. Please use complete sentences and correct grammar as you
 > express your thoughts (a lengthy report is not necessary):
 
-Purposes (repeated):
-====================
+**Purposes (repeated)** 
+1. Learn about the construction and characteristics of a CMOS inverter
+2. Measure and record the input and output characteristics of an inverter
+3. Find the threshold voltage of the inverter
+4. Gain experience using the 74HC04 and the 74HC05 inverter chips
 
--   Learn about the construction and characteristics of a CMOS inverter
 
--   Measure and record the input and output characteristics of an
-    inverter
+---
 
--   Find the threshold voltage of the inverter
-
--   Gain experience using the 74HC04 and the 74HC05 inverter chips
-
-(The conclusions box will expand as you write)
-
-+--------------+
-| Conclusions: |
-| ------------ |
-+--------------+
-
-Conclusion Statement 
---------------------
-
-Congratulations, you have completed Lab!
-----------------------------------------
-
-You may now submit this document.
----------------------------------
+```
+[ FILL IN YOUR CONCLUSION STATEMENTS HERE ]
+```
+---
+### Congratulations, you have completed Lab!
+Save and you may now submit this markdown document on Canvas.
