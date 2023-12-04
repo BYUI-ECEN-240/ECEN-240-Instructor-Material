@@ -18,9 +18,6 @@
 1.)   Construct the inverter shown in the schematic of Figure 1.
 Use the left side of the breadboard.
 
-![Diagram, schematic Description automatically
-generated](media/image1.png){width="3.4770713035870515in"
-height="2.5583803587051617in"}
 
 <p style="text-indent:50px">
 <img src="media/Inverter.png" width="300" align="middle">
