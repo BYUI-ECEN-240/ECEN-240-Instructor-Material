@@ -1,6 +1,7 @@
 # ECEN 240 Lab 2 -- Logic Inverters
 
-### NAME :  <span style="color:red;">[insert your name here] </span>
+### NAME:  <span style="color:red;">    [insert your name here]
+</span>
 
 ## Purposes:
 
@@ -179,22 +180,23 @@ Figure 7 -- Complete 3 inverter Circuit
 
 3. Find the input threshold voltage of the discrete transistor by observing the voltage at which the LED changes from OFF to ON.  >
     
-    V<sub>threshold</sub> =  ``` [fill_in]```
+    V<sub>threshold</sub> =  ``` [FILL_IN] ```
 
-    ```
+<br>
+
     Was this voltage similar to the threshold measurement in Part 1?
-                    [fill_in]
-    ```
+                    [FILL_IN]
 
 
 
 4. With the LED "on", measure the output voltage of each inverter and repeat the measurements with the LED "off".
 
-                    LED "on"   LED "off"
-  ----------------- ---------- -----------
-  Inverter 1 Vout              
-  Inverter 2 Vout              
-  Inverter 3 Vout              
+    |                 |  LED “on” |  LED “off” |
+    |-----------------|-----------|------------|
+    | Inverter 1 Vout |           |            |
+    | Inverter 2 Vout |           |            |
+    | Inverter 3 Vout |           |            |
+
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 2 Quiz 2</span>
 (Link in iLearn Module)
