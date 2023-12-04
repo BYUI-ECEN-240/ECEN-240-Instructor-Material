@@ -300,10 +300,9 @@ Part 3. Logisim Evolution Circuit.
     below the circuit. Type your name and change the font size if
     necessary so your name is clearly legible.
 
-> ![](media/image1.png){width="4.333333333333333in"
-> height="1.3779746281714786in"}
 
--   
+
+
 
 -   Test your implementation (try all of the possibilities) and make
     sure the circuit works as expected.
@@ -339,75 +338,74 @@ test results)
 
 Snapshot of Test Vector Results (10 points)
 
-> Take a "snapshot" of the circuit (including your name), and paste the
-> snapshot in the submission box below (the "snipping tool" may be used
-> in Windows, or "cmd-shift-4" in Mac OSx). You can resize the circuit
-> using the up and down arrows found at the bottom-left corner.
+Take a "screenshot" of the circuit (including your name), and paste the
+screenshot in the submission box below (the "snipping tool" may be used
+in Windows, or "cmd-shift-4" in Mac OSx).
+
+You can resize the circuit using the up and down arrows found at the bottom-left corner.
 >
 > ![](media/image2.png){width="2.2136745406824145in"
 > height="0.8101596675415573in"}
 >
 > Paste the snapshot in the border box below.
 
-(The circuit diagram box should expand to fit the size of your
-screen-shot)
+```bash
 
-  --
-  --
+                #Screenshot goes here.   Delete these lines and replace with 
+                #a link with the following MarkDown URL syntax:
+                # See the example above for the 
+
+                ![](URL_TO_FILE)
+
+
+```
 
 Snapshot of Logisim Evolution Circuit (20 points)
 
-Part 5. 74xx family of logic gates
+### Part 5. 74xx family of logic gates
 
-> The 74xx family of logic gates is a family of integrated circuits
-> (ICs) that implement all of the basic logic functions. Lab 3 Quiz 3
-> will link to a set of data sheets that you will use to become familiar
-> with the function of each pin on the key components.
+The 74xx family of logic gates is a family of integrated circuits
+(ICs) that implement all of the basic logic functions. Lab 3 Quiz 3
+will link to a set of data sheets that you will use to become familiar
+with the function of each pin on the key components.
 
-**\*\*\*To learn about 74xx logic gates, take Lab 3: Quiz 3\*\*\***
+<span style="color:red;font-size:18px">
+To learn about 74xx logic gates,
+</span>
+<span style="font-weight:bold;color:red;font-size:18px">
+take Lab 3: Quiz 3
+</span>
+(Link in iLearn Module)
+
 
 **(12 Points)**
 
-Part 6. Build the laptop fan and alarms circuit with 74xx logic gates
-and demonstrate the functionality to a lab assistant or instructor.
+### Part 6. Build the laptop fan and alarms circuit
+Use 74xx logic gates and demonstrate the functionality to a lab assistant or instructor.
 
-**\*\*\*To pass off your circuit, take Lab 3: Quiz 4\*\*\***
+<span style="color:red;font-size:18px">
+To pass off your circuit,
+</span>
+<span style="font-weight:bold;color:red;font-size:18px">
+take Lab 3: Quiz 4
+</span>
+(Link in iLearn Module)
 
 **(20 points)**
 
-Part 7. Conclusion statement.
+### Part 7. Conclusion statement.
 
-> Write a brief conclusions statement that discusses all of the original
-> purposes of the lab (found at the beginning of this lab document).
-> Please use complete sentences and correct grammar to express your
-> thoughts. Please comment on each of the purposes of the lab:
+Write a brief conclusions statement that discusses all of the original purposes of the lab (repeated below). Please discuss your observations on all four bullets. Please use complete sentences and correct grammar as you express your thoughts (a lengthy report is not necessary):
 
-Purposes:
-=========
+**Purposes (repeated)** 
+1. Review the basic logic gates.  logic simulation.
+2. Learn how real-world problems may be solved by solving a simple digital design problem.
+3. Learn how to implement a digital circuit using the 74xx family of logic gates
+---
 
--   Review the basic logic gates.
-
--   Learn how to use a Computer Aided Design (CAD) tool for digital
-    logic simulation.
-
--   Learn how real-world problems may be solved by solving a simple
-    digital design problem.
-
--   Learn how to implement a digital circuit using the 74xx family of
-    logic gates
-
-(The conclusions box will expand as you write)
-
-+--------------+
-| Conclusions: |
-| ------------ |
-+--------------+
-
-Conclusion Statement (12 points)
---------------------------------
-
-Congratulations, you have completed Lab!
-----------------------------------------
-
-You may now submit this document.
----------------------------------
+```
+[ FILL IN YOUR CONCLUSION STATEMENTS HERE ]
+```
+---
+### Congratulations, you have completed Lab!
+Save and you may now submit this markdown document on Canvas.
