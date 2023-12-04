@@ -47,10 +47,12 @@ Copying the material into iLearn, then providing links to the copies of the file
 <br><br>
 ----
 ## Index of materials
-Quick links to the material are given below.  I
+Quick links to the material:
 
-* [LAB 1](ECEN240_Lab1/ECEN240_Lab1_Analog_vs_Digital.md)
-    * ksjdf
+* [LAB 1: **"Analog vs. Digital"** Instructions](ECEN240_Lab1/ECEN240_Lab1_Analog_vs_Digital.md)
+* [LAB 2: **"Logic Inverters"** Instructions](ECEN240_Lab2/ECEN240_Lab2_Logic_Inverters.md)
+* [LAB 3: **"Logic Gates"** Instructions](ECEN240_Lab3/ECEN240_Lab3_Logic_Gates.md)
+    * [**"Getting Started with Logisim"** Instructions](ECEN240_Lab3/Getting_Started_with_Logisim_Evolution.md)
+    * [**"Logic Laws and Theorums"**](ECEN240_Lab3/Using_Laws_and_Theorems_to_Simplify_an_Equation.md)
+* [LAB 4: **"SSI Circuits"** Instructions](ECEN240_Lab4/ECEN240_Lab4_SSI_Circuits.md)
 
-
-Try that
