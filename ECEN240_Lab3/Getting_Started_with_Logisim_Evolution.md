@@ -35,42 +35,41 @@ installation, but MacOS and Linux are almost identical.
 After installing and running the program, you should see the initial
 Logisim Evolution view:
 
-![](media/image3.png){width="6.5in" height="3.577777777777778in"}
+
+<p style="text-indent:30px">
+<img src="media/Step1.png" width="600" align="center">
+</p>
 
 Once you have the ***Logisim Evolution*** window open, follow the steps
 below to create a simple circuit:
 
 <p style="text-indent:30px">
-<img src="media/Step1.png" width="300" align="center">
+<img src="media/Step2.png" width="600" align="center">
 </p>
 
 <p style="text-indent:30px">
-<img src="media/Step2.png" width="300" align="center">
+<img src="media/Step3.png" width="600" align="center">
 </p>
 
 <p style="text-indent:30px">
-<img src="media/Step3.png" width="300" align="center">
-</p>
-
-<p style="text-indent:30px">
-<img src="media/Step4.png" width="300" align="center">
+<img src="media/Step4.png" width="600" align="center">
 </p>
 
 
 <p style="text-indent:30px">
-<img src="media/Step5.png" width="300" align="center">
+<img src="media/Step5.png" width="600" align="center">
 </p>
 
 <p style="text-indent:30px">
-<img src="media/Step6.png" width="300" align="center">
+<img src="media/Step6.png" width="600" align="center">
 </p>
 
 <p style="text-indent:30px">
-<img src="media/Step7.png" width="300" align="center">
+<img src="media/Step7.png" width="600" align="center">
 </p>
 
 <p style="text-indent:30px">
-<img src="media/Step8.png" width="300" align="center">
+<img src="media/Step8.png" width="600" align="center">
 </p>
 
 ## Simulation of Circuit
@@ -91,5 +90,5 @@ course of the class.
 
 
 <p style="text-indent:30px">
-<img src="media/Step9.png" width="300" align="center">
+<img src="media/Step9.png" width="600" align="center">
 </p>
