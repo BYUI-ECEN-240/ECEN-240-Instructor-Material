@@ -1,8 +1,24 @@
 # ECEN-240 Lab Repository
 This repository contains the material and instructions for students enrolled in BYU-Idaho's ECEN-240 class to complete the concurrent labs.  
 
+## Index of materials
+
+* [LAB 1: **"Analog vs. Digital"** Instructions](ECEN240_Lab1/ECEN240_Lab1_Analog_vs_Digital.md)
+* [LAB 2: **"Logic Inverters"** Instructions](ECEN240_Lab2/ECEN240_Lab2_Logic_Inverters.md)
+* [LAB 3: **"Logic Gates"** Instructions](ECEN240_Lab3/ECEN240_Lab3_Logic_Gates.md)
+    * [**"Getting Started with Logisim"** Instructions](ECEN240_Lab3/Getting_Started_with_Logisim_Evolution.md)
+    * [**"Logic Laws and Theorums"**](ECEN240_Lab3/Using_Laws_and_Theorems_to_Simplify_an_Equation.md)
+* [LAB 4: **"SSI Circuits"** Instructions](ECEN240_Lab4/ECEN240_Lab4_SSI_Circuits.md)
+
+### For Instructors
+* [Comments](#comments)
+* [Motivations for this change](#motivations-for-this-change)
+* [Use Model](#usage)
+
+
 ## Comments
-Originally written in MSWORD (the .DOCX files are still included), these labs have been re-formatted and updated into the MarkDown language and are being maintained in Github.  The refresh also includes graphics that are reflective of the latest version (**3.8.0**) of Logicsim, so as to promote the use of the most-recent release of that software.  
+Originally written in MSWORD, these labs have been re-formatted and updated into the MarkDown language and are being maintained in Github.
+The refresh also includes graphics that are reflective of the latest version (**3.8.0**) of Logicsim, so as to promote the use of the most-recent release of that software.  
 
 ### Motivations for this change:
 
@@ -45,14 +61,4 @@ Copying the material into iLearn, then providing links to the copies of the file
 
 - **Homework submission**:  The modified respective MarkDown document(s) is(are) uploaded as a file(s) on iLearn.
 <br><br>
-----
-## Index of materials
-Quick links to the material:
-
-* [LAB 1: **"Analog vs. Digital"** Instructions](ECEN240_Lab1/ECEN240_Lab1_Analog_vs_Digital.md)
-* [LAB 2: **"Logic Inverters"** Instructions](ECEN240_Lab2/ECEN240_Lab2_Logic_Inverters.md)
-* [LAB 3: **"Logic Gates"** Instructions](ECEN240_Lab3/ECEN240_Lab3_Logic_Gates.md)
-    * [**"Getting Started with Logisim"** Instructions](ECEN240_Lab3/Getting_Started_with_Logisim_Evolution.md)
-    * [**"Logic Laws and Theorums"**](ECEN240_Lab3/Using_Laws_and_Theorems_to_Simplify_an_Equation.md)
-* [LAB 4: **"SSI Circuits"** Instructions](ECEN240_Lab4/ECEN240_Lab4_SSI_Circuits.md)
 
