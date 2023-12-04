@@ -8,8 +8,10 @@ The "logisim-evolution.jar" file may be run from any operating system as
 long as Java is installed on the system (Windows, Mac OSx, Linux, etc.).
 In most systems you simply need to double-click on the "jar" file. In
 other systems it is invoked at the command prompt with a command like this:
+
 ```bash
-java -jar logisim-evolution.jar
+    # For MacOS or Linux, Command-line:
+    java -jar logisim-evolution.jar
 ```
 
 Logisim-Evolution should be installed on your computer. Installation can
