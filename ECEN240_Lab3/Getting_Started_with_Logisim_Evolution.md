@@ -18,7 +18,7 @@ version is ***3.8.0***, and can be found
 
 [LINK HERE](https://github.com/logisim-evolution/logisim-evolution/releases)
 <p style="text-indent:30px">
-<img src="media/Install_Graphic.png" width="300" align="center">
+<img src="media/Install_Graphic.png" width="600" align="center">
 </p>
 
 
@@ -40,34 +40,42 @@ Logisim Evolution view:
 <img src="media/Step1.png" width="600" align="center">
 </p>
 
+
 Once you have the ***Logisim Evolution*** window open, follow the steps
 below to create a simple circuit:
 
+#### Step 2
 <p style="text-indent:30px">
 <img src="media/Step2.png" width="600" align="center">
 </p>
 
+#### Step 3
 <p style="text-indent:30px">
 <img src="media/Step3.png" width="600" align="center">
 </p>
 
+#### Step 4
 <p style="text-indent:30px">
 <img src="media/Step4.png" width="600" align="center">
 </p>
 
+#### Step 5
 
 <p style="text-indent:30px">
 <img src="media/Step5.png" width="600" align="center">
 </p>
 
+#### Step 6
 <p style="text-indent:30px">
 <img src="media/Step6.png" width="600" align="center">
 </p>
 
+#### Step 7
 <p style="text-indent:30px">
 <img src="media/Step7.png" width="600" align="center">
 </p>
 
+#### Step 8
 <p style="text-indent:30px">
 <img src="media/Step8.png" width="600" align="center">
 </p>
