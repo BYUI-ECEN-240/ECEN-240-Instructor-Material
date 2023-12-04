@@ -83,9 +83,12 @@ potentiometer knob until it is close to the target "Vin" value on the table.
 
 * Repeat for the next input voltage until done
 
-</div>
+<br>
+<b>
+Table 1 -- Inverter Input vs Inverter Output
+</b>
 
-| Inverter Vin| **Inverter Vout** |
+| **Vin (Volts)** | **Vout (Volts)** |
 |-------------------|-------------------|
 |      (Volts)      |      (Volts)      |
 |         0         |                   |
@@ -111,68 +114,81 @@ potentiometer knob until it is close to the target "Vin" value on the table.
 |        3.8        |                   |
 |         4         |                   |
 |         5         |                   |
-|-------------------|-------------------|
+
+</div>
+
+5. The threshold voltage is defined as the voltage where the input voltage is equal to the output voltage.    From the table data determine the approximate threshold voltage:
 
 
+    V<sub>threshold</sub> =  ``` [fill_in]```
 
-Table 1 -- Inverter Input vs Inverter Output
+</span>
 
-> 5\. The threshold voltage is defined as the voltage where the input
-> voltage is equal to the output voltage. From the table data determine
-> the approximate threshold voltage:
->
-> Vthreshold =
-
-\*\*\*\*\* Take Lab 2 Quiz 1 \*\*\*\*\*
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab2 Quiz 1</span>
+(Link in iLearn Module)
 
 ### Part 2. Integrated Circuit Logic inverters.
 
-> 1\. Keeping the transistor inverter circuit on the left of the
-> breadboard, build the circuit shown in the schematic diagram of Figure
-> 5 on the right side of the breadboard. Refer to the data sheet of the
-> 74HC04 and 74HC05 to understand the function of each pin on each chip
->
-> Notes: These two chips are integrated inverter chips with 6 inverters
-> integrated into each chip.
+1.) Keeping the transistor inverter circuit on the left of the breadboard, build the circuit shown in the schematic diagram of **Figure 5** on the right side of the breadboard. Refer to the data sheet of the *74HC04* and *74HC05* to understand the function of each pin on each chip.
 
--   The 74HC04 inverters are built very much like your discrete
-    transistor inverter of part 1.
+>     Notes: These two chips are integrated inverter chips with six (6) inverters integrated into each chip.
 
--   The 74HC05 does not have the top (PMOS) transistor. It can only pull
-    down to GND and cannot pull up to 5V. It can drive more current,
-    however, so it is ideal for driving LEDs.
+-   The *74HC04* inverters are built very much like your discrete
+    transistor inverter of **Part 1**.
 
-![Diagram, schematic Description automatically
-generated](media/image5.png){width="4.149998906386702in"
-height="1.9529407261592302in"}
+-   The *74HC05* does not have the top (PMOS) transistor. It can only pull down to GND and cannot pull up to 5V. It can drive more current, however, so it is ideal for driving LEDs.
 
+
+
+
+<p style="text-indent:50px">
+<img src="media/two_transistors_inverter.png" width="300" align="middle">
+<p>
+<p style="text-indent:50px">
+<b>
 Figure 5 -- Two Inverters and an LED
+</b>
+</p>
 
-![A screenshot of a computer Description automatically generated with
-medium confidence](media/image6.jpeg){width="4.470150918635171in"
-height="3.3526148293963254in"}
 
+
+<p style="text-indent:30px">
+<img src="media/LED_04_05.jpeg" width="300" align="middle">
+<p>
+<p style="text-indent:60px">
+<b>
 Figure 6 -- Breadboarded Version of Figure 5
+</b>
+</p>
 
-> 2\. Create a 3 inverter chain by connecting the output of the discrete
-> transistor inverter circuit to the input of the integrated inverter
-> circuit shown in Figure 5. The complete circuit is shown in Figure 7.
+2. Create a 3 inverter chain by connecting the output of the discrete transistor inverter circuit to the input of the integrated inverter circuit shown in **Figure 5**. The complete circuit is shown in **Figure 7**.
+<br> <br>
 
-![A close - up of a ruler Description automatically generated with low
-confidence](media/image7.jpeg){width="4.514498031496063in"
-height="2.2258989501312336in"}
 
+<p style="text-indent:30px">
+<img src="media/Inverters_Pot_LED.jpeg" width="400" align="middle">
+<p>
+<p style="text-indent:60px">
+<b>
 Figure 7 -- Complete 3 inverter Circuit
+</b>
+</p>
 
-> 3\. Find the input threshold voltage of the discrete transistor by
-> observing the voltage at which the LED changes from OFF to ON.
->
-> Vthreshold =
->
-> Was this voltage similar to the threshold measurement in Part 1?
->
-> 4\. With the LED "on", measure the output voltage of each inverter and
-> repeat the measurements with the LED "off".
+
+
+
+3. Find the input threshold voltage of the discrete transistor by observing the voltage at which the LED changes from OFF to ON.  >
+    
+    V<sub>threshold</sub> =  ``` [fill_in]```
+
+    ```
+    Was this voltage similar to the threshold measurement in Part 1?
+                    [fill_in]
+    ```
+
+
+
+4. With the LED "on", measure the output voltage of each inverter and repeat the measurements with the LED "off".
 
                     LED "on"   LED "off"
   ----------------- ---------- -----------
@@ -180,21 +196,18 @@ Figure 7 -- Complete 3 inverter Circuit
   Inverter 2 Vout              
   Inverter 3 Vout              
 
-> \*\*\*\*\* Take Lab 2 Quiz 2 \*\*\*\*\*
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab 2 Quiz 2</span>
+(Link in iLearn Module)
 
 ### Part 3. Conclusions statement
 
-> Write a brief conclusions statement that discusses all of the original
-> purposes of the lab. Please discuss your observations on all four
-> bullets. Please use complete sentences and correct grammar as you
-> express your thoughts (a lengthy report is not necessary):
+Write a brief conclusions statement that discusses all of the original purposes of the lab. Please discuss your observations on all four bullets. Please use complete sentences and correct grammar as you express your thoughts (a lengthy report is not necessary):
 
 **Purposes (repeated)** 
 1. Learn about the construction and characteristics of a CMOS inverter
 2. Measure and record the input and output characteristics of an inverter
 3. Find the threshold voltage of the inverter
 4. Gain experience using the 74HC04 and the 74HC05 inverter chips
-
 
 ---
 
