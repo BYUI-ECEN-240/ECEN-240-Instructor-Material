@@ -23,7 +23,7 @@ The refresh also includes graphics that are reflective of the latest version (**
 ### Motivations for this change:
 
 1. By providing content in a browser-accessible format, the path is prepared for considering an universal online-distribution
-2. MarkDown, required by other ECEN/CSE courses, is generally a simpler, non-proprietary document format, for students to edit
+2. MarkDown, required by other ECEN/CSE courses, is generally a simpler, non-proprietary document format, for students to edit.  The default program for editting MD on most PC's is MS-VisualStudioCode, (already pre-loaded on the STC lab computers) and very familiar to the students.
 3. BYU-I, as a Github enterprise customer, provides the framework for college/department support and easy ownership transition with personnel changes
 4. Delivery of the labs and any other associated class collateral (for example, a full Vivado project template/files) is now easily done and supported with the repository framework.
 5. This format provides the option to use Github Classrooms as the delivery framework for the material.  This opens possibilities to prepare customized per-student, delivery.  This can be useful, should the decision to implement anti-cheating or other online detractors.
