@@ -1,144 +1,111 @@
-ECEN 240 Lab 3 -- Logic Gates
-=============================
+# ECEN 240 Lab 3 -- Logic Gates
 
-Name:
-=====
+### NAME :  <span style="color:red;">[insert your name here] </span>
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-====================================================================================================================================================================
-
-Purposes:
-=========
+## Purposes:
 
 -   Review the basic logic gates.
-
--   Learn how to use a Computer Aided Design (CAD) tool for digital
-    logic simulation.
-
+-   Learn how to use a Computer Aided Design (CAD) tool for digital logic simulation.
 -   Learn how real-world problems may be solved by solving a simple
     digital design problem.
+-   Learn how to implement a digital circuit using the 74xx family of logic gates
 
--   Learn how to implement a digital circuit using the 74xx family of
-    logic gates
+## Procedures:
 
-Procedures:
-===========
+### Part 1
+This portion of the lab is intended to be completed after
+**Lesson 3 part 2**.
 
-> Part 1. This portion of the lab is intended to be completed after
-> **Lesson 3 part 2**. Please do the "Getting Started with Logisim
-> Evolution" tutorial found on the "Logisim Evolution" page of the
-> "Course Resources" module to become familiar with *Logisim Evolution*.
->
-> Review the reading and class slides about the basic logic gates. Fill
-> out the truth tables that follow with the expected results for each
-> type of gate, then using *Logisim Evolution*, verify the expected
-> results for each of the following gates:
+Please do the *"Getting Started with Logisim
+Evolution"* tutorial [LINK HERE](./Getting_Started_with_Logisim_Evolution.md).
+
+
+Review the reading and class slides about the basic logic gates.
+Fill out the truth tables that follow with the expected results
+for each type of gate, thene using *Logisim Evolution*,
+verify the expected results for each of the following gates:
 
 -   Two input NAND gate
-
 -   Two input NOR gate
-
 -   NOT gate
-
 -   Two input AND gate
-
 -   Two input OR gate
-
 -   Two input XOR gate
 
-NAND gate
 
-+-----+-----+-------------------+--------------------+
-| > A | > B | > Expected Output | > *Logisim* Output |
-+=====+=====+===================+====================+
-| 0   | 0   |                   |                    |
-+-----+-----+-------------------+--------------------+
-| 0   | 1   |                   |                    |
-+-----+-----+-------------------+--------------------+
-| 1   | 0   |                   |                    |
-+-----+-----+-------------------+--------------------+
-| 1   | 1   |                   |                    |
-+-----+-----+-------------------+--------------------+
+### NAND gate
 
-NOR gate
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
 
-+-----+-----+-------------------+------------------+
-| > A | > B | > Expected Output | > Logisim Output |
-+=====+=====+===================+==================+
-| 0   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 0   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
+### NOR gate
 
-Not gate (inverter)
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
 
-+-----+-------------------+------------------+
-| > A | > Expected Output | > Logisim Output |
-+=====+===================+==================+
-| 0   |                   |                  |
-+-----+-------------------+------------------+
-| 1   |                   |                  |
-+-----+-------------------+------------------+
+### Not gate (inverter)
 
-AND gate
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
 
-+-----+-----+-------------------+------------------+
-| > A | > B | > Expected Output | > Logisim Output |
-+=====+=====+===================+==================+
-| 0   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 0   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
+### AND gate
 
-OR gate
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
 
-+-----+-----+-------------------+------------------+
-| > A | > B | > Expected Output | > Logisim Output |
-+=====+=====+===================+==================+
-| 0   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 0   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
+### OR gate
 
-XOR gate
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
 
-+-----+-----+-------------------+------------------+
-| > A | > B | > Expected Output | > Logisim Output |
-+=====+=====+===================+==================+
-| 0   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 0   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 0   |                   |                  |
-+-----+-----+-------------------+------------------+
-| 1   | 1   |                   |                  |
-+-----+-----+-------------------+------------------+
+### XOR gate
 
-**\*\*\*To check your work and demonstrate mastery, take Lab 3: Quiz
-1\*\*\***
+| **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
+|-------|-------|---------------------|---------------------|
+|   0   |   0   |                     |                     |
+|   0   |   1   |                     |                     |
+|   1   |   0   |                     |                     |
+|   1   |   1   |                     |                     |
+|       |       |                     |                     |
+
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
+(Link in iLearn Module)
 
 **(12 points)**
 
-Part 2. This portion of the lab is to be completed after **Lesson 3 part
+### Part 2.
+This portion of the lab is to be completed after **Lesson 3 part
 2**.
 
-> A laptop microprocessor is to have a circuit built into it which will
-> sound an alarm for low charge on the battery when the cord is not
-> plugged in, and also control a CPU fan for high temperature when the
-> battery is not too low. The inputs and outputs for this circuit are
-> described in the table below.
+```
+Problem Statement
+A laptop microprocessor is to have a circuit built into it which will sound an alarm for low charge on the battery when the cord is not plugged in, and also control a CPU fan for high temperature when the battery is not too low. The inputs and outputs for this circuit are described in the table below.
+```
 
 +-------+----------+----------+----------+----------+----------+
 |       | *Inputs* | *        |          |          |          |
@@ -162,79 +129,70 @@ Part 2. This portion of the lab is to be completed after **Lesson 3 part
 |       | > in     |          |          |          |          |
 +-------+----------+----------+----------+----------+----------+
 
-> The exact operation is defined by the following truth table:
+The exact operation is defined by the following truth table:
 
-+------------+-------------------+------------+-------------+-----------+
-| > *Inputs* | > *Outputs*       |            |             |           |
-+============+===================+============+=============+===========+
-| > **Cord** | > **Low Voltage** | > **Temp** | > **Alarm** | > **Fan** |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 0               | > 0        | > 0         | > 0       |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 0               | > 1        | > 0         | > 1       |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 1               | > 0        | > 1         | > 0       |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 1               | > 1        | > 1         | > 0       |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 0               | > 0        | > 0         | > 0       |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 0               | > 1        | > 0         | > 1       |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 1               | > 0        | > 0         | > 0       |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 1               | > 1        | > 0         | > 1       |
-+------------+-------------------+------------+-------------+-----------+
+| *Inputs* | *Outputs*       |            |             |           |
+|----------|-----------------|------------|-------------|---------|
+| **Cord** | **Low Voltage** | **Temp**   | **Alarm**   | **Fan** |
+| 0        | 0               | 0        | 0         | 0       |
+| 0        | 0               | 1        | 0         | 1       |
+| 0        | 1               | 0        | 1         | 0       |
+| 0        | 1               | 1        | 1         | 0       |
+| 1        | 0               | 0        | 0         | 0       |
+| 1        | 0               | 1        | 0         | 1       |
+| 1        | 1               | 0        | 0         | 0       |
+| 1        | 1               | 1        | 0         | 1       |
 
-> Your task is to design the combinational logic circuit that will
-> operate as described in the truth table above.
->
-> Start with the derivation of the equation for the alarm and simplify
-> as needed. From the truth table, note that the alarm turns on only
-> when the cord is not plugged in and the voltage is low (the status of
-> **Temp** does not impact the output). Our equation looks like:
->
-> Alarm = (low voltage) AND (cord not plugged in)
->
-> Inserting the actual inputs into the alarm equation gives us
->
-> Alarm = (Low Voltage) AND (NOT (Cord))
->
-> Though it is possible to simplify the equation for the alarm by
-> inspection, you are asked to go through the exercise of simplifying
-> Boolean Equations using theorems. To make the equation easier to read,
-> assign a single letter to represent each of the signals. Start with
-> the un-simplified equation for **Alarm**, as shown:
->
-> **C** = Cord
->
-> **V** = Low Voltage
->
-> **T** = Temperature
+
+Your task is to design the combinational logic circuit that will
+operate as described in the truth table above.
+
+Start with the derivation of the equation for the alarm and simplify
+as needed. From the truth table, note that the alarm turns on only
+when the cord is not plugged in and the voltage is low (the status of
+**Temp** does not impact the output). Our equation looks like:
+
+Alarm = (low voltage) AND (cord not plugged in)
+
+Inserting the actual inputs into the alarm equation gives us
+
+Alarm = (Low Voltage) AND (NOT (Cord))
+
+Though it is possible to simplify the equation for the alarm by
+inspection, you are asked to go through the exercise of simplifying
+Boolean Equations using theorems. To make the equation easier to read,
+assign a single letter to represent each of the signals. Start with
+the un-simplified equation for **Alarm**, as shown:
+
+**C** = Cord
+
+**V** = Low Voltage
+
+**T** = Temperature
 
 ### Alarm = C'•V•T' + C'•V•T
 
-### 
+Use the simplification theorem: **XY + XY' = X**
 
-> Use the simplification theorem: **XY + XY' = X**
->
-> Substitute **X** with **C'•V**, and **Y** with **T.** The simplified
-> equation for Alarm is:
+Substitute **X** with **C'•V**, and **Y** with **T.** The simplified
+equation for Alarm is:
 
   -------------
-  **Alarm =**
+  **Alarm**
   -------------
 
-> Next, write the un-simplified equation for the fan output with respect
-> to the inputs:
->
-> **Fan** =
->
-> Simplify the equation using Boolean theorems. Leave the equation in a
-> sum-of-products form:
+Next, write the un-simplified equation for the fan output with respect
+to the inputs:
+
+---
+**Fan**
+---
+
+Simplify the equation using Boolean theorems. Leave the equation in a
+sum-of-products form:
 
   -----------
-  **Fan =**
+  **Fan**
   -----------
 
 > Verify that your simplified equations are correct by filling in the
@@ -263,10 +221,8 @@ Part 2. This portion of the lab is to be completed after **Lesson 3 part
 | > 1        | > 1               | > 1        |             |           |
 +------------+-------------------+------------+-------------+-----------+
 
-**\*\*\*To check your work and demonstrate mastery, take Lab 3: Quiz
-2\*\*\***
-
-**(12 points)**
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 2</span>
+(Link in iLearn Module) **(12 points)**
 
 Part 3. Logisim Evolution Circuit.
 
