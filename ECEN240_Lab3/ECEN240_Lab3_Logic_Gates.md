@@ -131,7 +131,7 @@ A laptop microprocessor is to have a circuit built into it which will sound an a
 
 The exact operation is defined by the following truth table:
 
-| *Inputs* | *Outputs*       |            |             |           |
+| *Inputs* | *Outputs*     ||||
 |----------|-----------------|------------|-------------|---------|
 | **Cord** | **Low Voltage** | **Temp**   | **Alarm**   | **Fan** |
 | 0        | 0               | 0        | 0         | 0       |
