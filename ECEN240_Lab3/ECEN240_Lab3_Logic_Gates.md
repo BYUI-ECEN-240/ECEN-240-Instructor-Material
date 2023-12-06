@@ -34,9 +34,9 @@ verify the expected results for each of the following gates:
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
 
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
-### NAND gate
+**NAND gate**
 
 
 | **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
@@ -50,7 +50,7 @@ verify the expected results for each of the following gates:
 </div>
 <br>
 
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
 ### NOR gate
 
@@ -65,7 +65,7 @@ verify the expected results for each of the following gates:
 </div>
 
 <br>
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
 ### Not gate (inverter)
 
@@ -79,7 +79,7 @@ verify the expected results for each of the following gates:
 
 </div>
 <br>
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
 ### AND gate
 
@@ -94,7 +94,7 @@ verify the expected results for each of the following gates:
 </div>
 
 <br>
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
 ### OR gate
 
@@ -108,7 +108,7 @@ verify the expected results for each of the following gates:
 
 </div>
 <br>
-<div style="border: 3px solid black; text-align: center; width:30%;">
+<div style="border: 3px solid red; text-align: center; width:30%;">
 
 ### XOR gate
 
@@ -198,7 +198,7 @@ equation for Alarm is:
 
 ---
 
-<div style="border: 3px solid black;font-weight:bold;width:50%;vertical-align:center">
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
 <p> </p>
 Alarm =
 <p> </p>
@@ -208,7 +208,7 @@ Alarm =
 
 Next, write the un-simplified equation for the fan output with respect
 to the inputs:
-<div style="border: 3px solid black;font-weight:bold;width:50%;align-items:center;">
+<div style="border: 3px solid red;font-weight:bold;width:50%;align-items:center;">
 <p> </p>
 (unsimplified) Fan = 
 <p> </p>
@@ -218,7 +218,7 @@ to the inputs:
 
 Simplify the equation using Boolean theorems. Leave the equation in a
 sum-of-products form:
-<div style="border: 3px solid black;font-weight:bold;width:50%;vertical-align:center;">
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center;">
 <p> </p>
 (reduced) Fan =
 <p> </p>
