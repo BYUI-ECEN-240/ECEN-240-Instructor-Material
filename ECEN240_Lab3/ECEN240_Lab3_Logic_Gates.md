@@ -34,7 +34,9 @@ verify the expected results for each of the following gates:
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
 
+<!--
 <div style="border: 3px solid red; text-align: center; width:30%;">
+-->
 
 **NAND gate**
 
@@ -48,6 +50,7 @@ verify the expected results for each of the following gates:
 |       |       |                     |                     |
 
 </div>
+
 <br>
 
 <div style="border: 3px solid red; text-align: center; width:30%;">
