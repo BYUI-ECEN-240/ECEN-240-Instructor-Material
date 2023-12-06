@@ -32,8 +32,12 @@ verify the expected results for each of the following gates:
 -   Two input OR gate
 -   Two input XOR gate
 
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
+
+<div style="border: 3px solid black; text-align: center; width:30%;">
 
 ### NAND gate
+
 
 | **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
 |-------|-------|---------------------|---------------------|
@@ -42,6 +46,11 @@ verify the expected results for each of the following gates:
 |   1   |   0   |                     |                     |
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
+
+</div>
+<br>
+
+<div style="border: 3px solid black; text-align: center; width:30%;">
 
 ### NOR gate
 
@@ -53,6 +62,11 @@ verify the expected results for each of the following gates:
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
 
+</div>
+
+<br>
+<div style="border: 3px solid black; text-align: center; width:30%;">
+
 ### Not gate (inverter)
 
 | **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
@@ -62,6 +76,10 @@ verify the expected results for each of the following gates:
 |   1   |   0   |                     |                     |
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
+
+</div>
+<br>
+<div style="border: 3px solid black; text-align: center; width:30%;">
 
 ### AND gate
 
@@ -73,6 +91,11 @@ verify the expected results for each of the following gates:
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
 
+</div>
+
+<br>
+<div style="border: 3px solid black; text-align: center; width:30%;">
+
 ### OR gate
 
 | **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
@@ -83,6 +106,10 @@ verify the expected results for each of the following gates:
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
 
+</div>
+<br>
+<div style="border: 3px solid black; text-align: center; width:30%;">
+
 ### XOR gate
 
 | **A** | **B** | **Expected <br>Output** | **Logisim <br>Output** |
@@ -92,6 +119,9 @@ verify the expected results for each of the following gates:
 |   1   |   0   |                     |                     |
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
+
+</div>
+<br>
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
 (Link in iLearn Module)
@@ -107,29 +137,27 @@ Problem Statement
 A laptop microprocessor is to have a circuit built into it which will sound an alarm for low charge on the battery when the cord is not plugged in, and also control a CPU fan for high temperature when the battery is not too low. The inputs and outputs for this circuit are described in the table below.
 ```
 
-+-------+----------+----------+----------+----------+----------+
-|       | *Inputs* | *        |          |          |          |
-|       |          | Outputs* |          |          |          |
-+=======+==========+==========+==========+==========+==========+
-|       | >        | > **Low  | >        | > *      | >        |
-|       |  **Power | > V      |  **Tempe | *Alarm** |  **Fan** |
-|       | > Cord** | oltage** | rature** |          |          |
-+-------+----------+----------+----------+----------+----------+
-| **0** | > Cord   | > [      | > [      | alarm    | > fan    |
-|       | > [      | not]{.un | not]{.un | [        | > [      |
-|       | not]{.un | derline} | derline} | not]{.un | not]{.un |
-|       | derline} | > low    | > high   | derline} | derline} |
-|       | >        | >        | > temp   | on       | > on     |
-|       |  plugged |  voltage |          |          |          |
-|       | > in     |          |          |          |          |
-+-------+----------+----------+----------+----------+----------+
-| **1** | > cord   | > low    | > high   | alarm is | > fan is |
-|       | >        | >        | > tem    | on       | > on     |
-|       |  plugged |  voltage | perature |          |          |
-|       | > in     |          |          |          |          |
-+-------+----------+----------+----------+----------+----------+
+
+<div style="text-align: center; width:100%;">
+
+![](./media/tempalarm.png)
+
+</div>
+<br>
+<div style="text-align: center; width:50%;">
+
 
 The exact operation is defined by the following truth table:
+
+  <div style="display: table-cell; vertical-align: middle;">
+<span>
+
+![](./media/truth_table.png)
+
+</span>
+</div>
+</div>
+
 
 | *Inputs* | *Outputs*     ||||
 |----------|-----------------|------------|-------------|---------|
@@ -345,8 +373,6 @@ To pass off your circuit,
 <span style="font-weight:bold;color:red;font-size:18px">
 take Lab 3: Quiz 4
 </span>
-(Link in iLearn Module)
-
 **(20 points)**
 
 ### Part 7. Conclusion statement.
