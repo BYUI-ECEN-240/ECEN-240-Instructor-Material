@@ -134,7 +134,10 @@ This portion of the lab is to be completed after **Lesson 3 part
 
 ```
 Problem Statement
-A laptop microprocessor is to have a circuit built into it which will sound an alarm for low charge on the battery when the cord is not plugged in, and also control a CPU fan for high temperature when the battery is not too low. The inputs and outputs for this circuit are described in the table below.
+A laptop microprocessor is to have a circuit built into it which will sound an alarm for low
+charge on the battery when the cord is not plugged in, and also control a CPU fan for high
+temperature when the battery is not too low. The inputs and outputs for this circuit are
+described in the table below.
 ```
 
 
@@ -158,20 +161,6 @@ The exact operation is defined by the following truth table:
 </div>
 </div>
 
-
-| *Inputs* | *Outputs*     ||||
-|----------|-----------------|------------|-------------|---------|
-| **Cord** | **Low Voltage** | **Temp**   | **Alarm**   | **Fan** |
-| 0        | 0               | 0        | 0         | 0       |
-| 0        | 0               | 1        | 0         | 1       |
-| 0        | 1               | 0        | 1         | 0       |
-| 0        | 1               | 1        | 1         | 0       |
-| 1        | 0               | 0        | 0         | 0       |
-| 1        | 0               | 1        | 0         | 1       |
-| 1        | 1               | 0        | 0         | 0       |
-| 1        | 1               | 1        | 0         | 1       |
-
-
 Your task is to design the combinational logic circuit that will
 operate as described in the truth table above.
 
@@ -180,7 +169,9 @@ as needed. From the truth table, note that the alarm turns on only
 when the cord is not plugged in and the voltage is low (the status of
 **Temp** does not impact the output). Our equation looks like:
 
+```
 Alarm = (low voltage) AND (cord not plugged in)
+```
 
 Inserting the actual inputs into the alarm equation gives us
 
@@ -205,23 +196,35 @@ Use the simplification theorem: **XY + XY' = X**
 Substitute **X** with **C'•V**, and **Y** with **T.** The simplified
 equation for Alarm is:
 
-  -------------
-  **Alarm**
-  -------------
+---
+
+<div style="border: 3px solid black;font-weight:bold;width:50%;vertical-align:center">
+<p> </p>
+Alarm =
+<p> </p>
+</div>
+
+---
 
 Next, write the un-simplified equation for the fan output with respect
 to the inputs:
+<div style="border: 3px solid black;font-weight:bold;width:50%;align-items:center;">
+<p> </p>
+(unsimplified) Fan = 
+<p> </p>
+</div>
 
----
-**Fan**
 ---
 
 Simplify the equation using Boolean theorems. Leave the equation in a
 sum-of-products form:
+<div style="border: 3px solid black;font-weight:bold;width:50%;vertical-align:center;">
+<p> </p>
+(reduced) Fan =
+<p> </p>
+</div>
 
-  -----------
-  **Fan**
-  -----------
+---
 
 > Verify that your simplified equations are correct by filling in the
 > outputs based on only on the equations. Then compare with the original
@@ -283,7 +286,6 @@ Part 3. Logisim Evolution Circuit.
     the "***A**"* from the toolbar at the top left, and place the cursor
     below the circuit. Type your name and change the font size if
     necessary so your name is clearly legible.
-
 
 
 
