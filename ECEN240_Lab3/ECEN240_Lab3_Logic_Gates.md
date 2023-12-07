@@ -138,16 +138,15 @@ verify the expected results for each of the following gates:
 **(12 points)**
 
 ### Part 2.
-This portion of the lab is to be completed after **Lesson 3 part
-2**.
+<span style="color:red;">Take Lab 3 Quiz 1
+This portion of the lab is to be completed after **Lesson 3 part 2**.
+</span>
 
-```
 Problem Statement
-A laptop microprocessor is to have a circuit built into it which will sound an alarm for low
+>   A laptop microprocessor is to have a circuit built into it which will sound an alarm for low
 charge on the battery when the cord is not plugged in, and also control a CPU fan for high
 temperature when the battery is not too low. The inputs and outputs for this circuit are
 described in the table below.
-```
 
 
 <div style="text-align: center; width:100%;">

@@ -1,98 +1,55 @@
-ECEN 240 Lab 4 -- Small Scale Integrated Circuits (SSI)
-=======================================================
+# ECEN 240 Lab 4 -- Small Scale Integrated Circuits (SSI)
 
-Name: 
-=====
+### NAME:  <span style="color:red;">    [insert your name here]
+</span>
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-======================================================================================================================================================================
-
-Purpose:
-========
+## Purposes:
 
 1.  Successfully reduce a Boolean logic equation to its simplest form.
-
 2.  Simulate the simplified equation using *Logisim Evolution*.
+3.  Learn how to use Small Scale Integrated circuit (SSI) logic devices (7400 family of ICs).
+4.  Verify that the circuit correctly implements the truth table of the original equation.
+5.  Explore the merits of using only NAND gates to implement a truth table (NOR gates are also functionally complete, but we will use NAND gates).
 
-3.  Learn how to use Small Scale Integrated circuit (SSI) logic devices
-    (7400 family of ICs).
-
-4.  Verify that the circuit correctly implements the truth table of the
-    original equation.
-
-5.  Explore the merits of using only NAND gates to implement a truth
-    table (NOR gates are also functionally complete, but we will use
-    NAND gates).
-
-Procedure:
-==========
+## Procedure:
 
 There will be two parts to this lab. Both parts of the lab will use the same truth table shown below. With this Truth table, you will:
-======================================================================================================================================
-
 -   Simplify the Boolean expression two different ways (Using Boolean theorems and K-maps)
-    ======================================================================================
-
 -   Implement the simplified equation in Logisim 4 different ways
-    =============================================================
-
 -   Learn the merits of each type of simplification and implementation
-    ==================================================================
 
-+-----+-----+-----+-----+---+-----+
-| > A | > B | C   | > D |   | > X |
-+=====+=====+=====+=====+===+=====+
-| > 0 | 0   | > 0 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 0   | > 0 | > 1 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 0   | > 1 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 0   | > 1 | > 1 |   | 0   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 1   | > 0 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 1   | > 0 | > 1 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 1   | > 1 | > 0 |   | 0   |
-+-----+-----+-----+-----+---+-----+
-| > 0 | 1   | > 1 | > 1 |   | 0   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 0   | > 0 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 0   | > 0 | > 1 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 0   | > 1 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 0   | > 1 | > 1 |   | 0   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 1   | > 0 | > 0 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 1   | > 0 | > 1 |   | 1   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 1   | > 1 | > 0 |   | 0   |
-+-----+-----+-----+-----+---+-----+
-| > 1 | 1   | > 1 | > 1 |   | 0   |
-+-----+-----+-----+-----+---+-----+
+<div style="text-align: center; width:60%;">
+<img src="./media/lab4_tt.png" style="width: 60%;">
+</div>
 
-**Lab 4 Part 1**
+### Part 1
 
-This portion of the lab is intended to be completed after **Lesson 4
-part 1**.
+<span style="color:red">Take Lab 3 Quiz 1!    
+This portion of the lab is intended to be completed after **Lesson 4 part 1**.
+
+</span>
 
 > Write the non-reduced (10 product) Boolean equation for the previous
 > truth table in SOP form:
 
-  ----
-  X=
-  ----
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<p> </p>
+X  =     <!-- FILL IN   -->
+<p> </p>
+</div>
+
+----
 
 > Simplify the equation using Boolean theorems, and write the reduced
 > equation:
 
-  ----
-  X=
-  ----
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<p> </p>
+X  =     <!-- FILL IN   -->
+<p> </p>
+</div>
+
+----
 
 **K-map-Based Simplification**
 
@@ -144,8 +101,13 @@ part 1**.
 > List the minterms that are present in the **largest** prime implicant
 > loop (m0, m1, ...):
 
-  ---------------
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<p> </p>
+<!-- FILL IN   -->
   Loop1 = Σm( )
+<p> </p>
+</div>
+  ---------------
   ---------------
 
 > List the minterms that are present in the **smallest** prime implicant
