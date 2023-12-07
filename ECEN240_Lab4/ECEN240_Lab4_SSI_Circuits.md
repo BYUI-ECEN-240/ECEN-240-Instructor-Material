@@ -57,49 +57,32 @@ X  =     <!-- FILL IN   -->
 > map:
 
 -   Fill in the K-map from the truth table.
-
 -   Identify the prime implicants.
 
--   Highlight each prime implicant loop with a different color or
-    pattern.
 
-    -   Select a group of cells in the table that you want to highlight.
+| <br><br><br>AB&bsol;<br><br>CD<br> | 00 | 01 | 11 | 10 |
+|:----------------------------------:|----|----|:--:|----|
+| 00                                 |    |    |    |    |
+| 01                                 |    |    |    |    |
+| 11                                 |    |    |    |    |
+| 10                                 |    |    |    |    |
 
-    -   Right click and select the "Borders and Shading" menu.
 
-    -   Under the "Shading" tab, select a color and/or a pattern.
 
-  -------------------------
-  AB\   00   01   11   10
-  CD                   
-  ----- ---- ---- ---- ----
-  00                   
 
-  01                   
 
-  11                   
 
-  10                   
-  -------------------------
 
-  ---------------------------
-  AB\   00   01   11    10
-  CD                    
-  ----- ---- ---- ----- -----
-  00    m0   m4   m12   m8
-
-  01    m1   m5   m13   m9
-
-  11    m3   m7   m15   m11
-
-  10    m2   m6   m14   m10
-  ---------------------------
+<div style="text-align: center; width:60%;">
+<img src="./media/prime_implicants.png" style="width: 70%;">
+</div>
 
 > Make sure you understand how the minterms, m0-m15, are mapped in the
 > above K-map.
->
-> List the minterms that are present in the **largest** prime implicant
-> loop (m0, m1, ...):
+
+---
+
+List the minterms that are present in the **largest** prime implicant loop (m0, m1, ...):
 
 <div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
 <p> </p>
@@ -107,25 +90,24 @@ X  =     <!-- FILL IN   -->
   Loop1 = Σm( )
 <p> </p>
 </div>
-  ---------------
-  ---------------
 
-> List the minterms that are present in the **smallest** prime implicant
-> loop:
+---
 
-  ---------------
-  Loop2 = Σm( )
-  ---------------
 
-> Verify that the K-map based simplification matches your Boolean
-> theorem-based simplification.
 
-**\*\*\*Take Lab 4: Quiz 1\*\*\***
+List the minterms that are present in the **smallest** prime implicant loop:
 
-**(10-point quiz)**
+<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<p> </p>
+  Loop2 = Σm( ) <!-- FILL IN   -->
+<p> </p>
+</div>
 
-***\
-***
+Verify that the K-map based simplification matches your Boolean theorem-based simplification.
+
+<span style="font-weight:bold;color:red;font-size:18px">Take Lab 4 Quiz 1</span>
+(Link in iLearn Module) **(10 points)**
+
 
 **Build Version 1 of the Circuit: Use AND, OR and NOT Gates**
 

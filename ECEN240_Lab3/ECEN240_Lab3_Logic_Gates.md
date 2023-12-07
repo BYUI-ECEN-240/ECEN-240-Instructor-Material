@@ -138,7 +138,7 @@ verify the expected results for each of the following gates:
 **(12 points)**
 
 ### Part 2.
-<span style="color:red;">Take Lab 3 Quiz 1
+<span style=";color:red;">Take Lab 3 Quiz 1
 This portion of the lab is to be completed after **Lesson 3 part 2**.
 </span>
 
