@@ -1,56 +1,51 @@
-**ECEN 240 Lab 5 Vivado Tutorial**
+# ECEN 240 Lab 5 Vivado Tutorial**
 
-> 1\. Download the Lab5\_RR.sv file from canvas and place on your
-> desktop. You will use this in step 5.
->
-> 2\. Start Vivado and Select "Create Project"
+1. Download the Lab5\_RR.sv file from canvas and place on your
+desktop. You will use this in step 5.
 
-![](media/image1.png){width="4.408952318460193in" height="3.725in"}
+2. Start Vivado and Select "Create Project"
 
-> 3\. Type the project name as "Lab5\_RR" and select "Next"
+![](media/vv1.png){width="4.408952318460193in" height="3.725in"}
 
-![](media/image2.png){width="4.358333333333333in"
+3. Type the project name as "Lab5\_RR" and select "Next"
+
+![](media/vv2.png){width="4.358333333333333in"
 height="2.5968066491688537in"}
 
-> 4\. Select RTL Project and then "Next"
+4. Select RTL Project and then "Next"
 
-![](media/image3.png){width="5.103478783902013in" height="2.35in"}
+![](media/vv3.png){width="5.103478783902013in" height="2.35in"}
 
-> 5\. Select "Add Files" and navigate to the "Lab5\_RR.sv" file you
-> downloaded from the "Lab5" Canvas module. Click on the file and select
-> OK.
+5. Select "Add Files" and navigate to the "Lab5\_RR.sv" file you downloaded from the "Lab5" Canvas module. Click on the file and select OK.
 
-![](media/image4.png){width="5.080232939632546in"
+![](media/vv4.png){width="5.080232939632546in"
 height="3.558333333333333in"}
 
-> 6\. Skip the "Add Constraints" option and just select "Next"
->
-> 7\. There are too many FPGA's to choose from! You need to configure
-> the project with the correct FPGA filter Settings:
+6. Skip the "Add Constraints" option and just select "Next"
 
--   Family: Artix-7.
+7. There are too many FPGA's to choose from! You need to configure the project with the correct FPGA filter Settings:
 
--   Package: cpg236
+- Family: Artix-7.
+- Package: cpg236
+- Speed: -1
 
--   Speed: -1
+8. Now you can easily find and select "xc7a35tcpg236-1" and then
+"Next".
 
-> 8\. Now you can easily find and select "xc7a35tcpg236-1" and then
-> "Next".
->
-> ![](media/image5.png){width="4.958333333333333in"
+![](media/vv5.png){width="4.958333333333333in"
 > height="3.4734798775153104in"}
->
-> 9\. To Create the project, select "Finish".
->
-> ![](media/image6.png){width="4.930423228346457in" height="3.475in"}
->
-> 10\. Open the "Lab5\_RR.sv" within Vivado file by clicking on
-> "Lab5\_RR\_top" in the Sources window.
->
-> ![](media/image7.png){width="5.0in" height="3.0037390638670165in"}
->
-> 11\. There are 3 modules within this file, Lab5\_RR\_top, Lab5\_RR,
-> and clk\_gen. You will only edit Lab5\_RR:
+
+9. To Create the project, select "Finish".
+
+![](media/vv6.png){width="4.930423228346457in" height="3.475in"}
+
+10. Open the "Lab5\_RR.sv" within Vivado file by clicking on
+"Lab5\_RR\_top" in the Sources window.
+
+![](media/vv7.png){width="5.0in" height="3.0037390638670165in"}
+
+11. There are 3 modules within this file, Lab5\_RR\_top, Lab5\_RR,
+and clk\_gen. You will only edit Lab5\_RR:
 
 -   Observe that the input ports and the output ports that are listed at
     the top of the Lab5\_RR module. These are the signals you will "pass
@@ -78,13 +73,13 @@ height="3.558333333333333in"}
 > 12\. Click on "Run Synthesis" on the side menu. Wait for the synthesis
 > to complete. This can take a while.
 
-![](media/image8.png){width="2.8962379702537184in"
+![](media/vv8.png){width="2.8962379702537184in"
 height="3.021255468066492in"}
 
 > 13\. If there were no errors, open the elaborated design (side menu),
 > and click on the schematic symbol at the top of the Vivado screen.
 
-![](media/image9.png){width="4.938188976377953in"
+![](media/vv9.png){width="4.938188976377953in"
 height="0.7605227471566054in"}
 
 > 14\. You will see a schematic diagram of the elaborated design. To
@@ -92,7 +87,7 @@ height="0.7605227471566054in"}
 > "Lab5\_RR". You should be able to see how Vivado interprets your
 > SystemVerilog code.
 
-![](media/image10.png){width="6.5in" height="3.9340277777777777in"}
+![](media/vv10.png){width="6.5in" height="3.9340277777777777in"}
 
 > 15\. We need to tell Vivado which pins to use on the FPGA chip. Click
 > on the blue "16 I/O Ports" at the top of the schematic menu. Type the
@@ -101,12 +96,12 @@ height="0.7605227471566054in"}
 > clocks. It also tells Vivado to use 3.3V by selecting the "LVCMOS33"
 > for the I/O Std of each of these signals.
 
-![](media/image11.png){width="6.5in" height="2.7111111111111112in"}
+![](media/vv11.png){width="6.5in" height="2.7111111111111112in"}
 
 > 16\. Now re-run the synthesis. You will be prompted to save the
 > configuration file (constraint file). Call it "Lab5\_RR".
 
-![](media/image12.png){width="3.4833333333333334in"
+![](media/vv12.png){width="3.4833333333333334in"
 height="3.5542771216097986in"}
 
 17\. After re-running Synthesis, select "Run Implementation" and open
@@ -115,7 +110,7 @@ You will see that the implemented design no longer shows AND, OR, and
 NOT gates. Instead, it shows that Vivado implemented your design with
 several small ROMs or LUTs (Look UP Tables).
 
-![](media/image13.png){width="6.5in" height="4.0875in"}
+![](media/vv13.png){width="6.5in" height="4.0875in"}
 
 18\. Select "Generate Bitstream" from the bottom of the left menu. This
 is turning your design into a file that can be dumped into the FPGA. It
@@ -130,7 +125,7 @@ and select "Open Target", then "Auto Connect". Once the computer has
 connected to the Basys3, you are ready to dump the configuration data
 into the FPGA. Select "Program Device".
 
-![](media/image14.png){width="5.0875in" height="3.4220483377077864in"}
+![](media/vv14.png){width="5.0875in" height="3.4220483377077864in"}
 
 You are now running the design on the Basys3! Use the three switches on
 the bottom right as your "Left", "Stop", and "Right" signals. The car
@@ -147,27 +142,27 @@ outputs can be done. A testbench file has already been created, called
 add it to your project as follows:
 
 ![Graphical user interface, text, application, email Description
-automatically generated](media/image15.png){width="4.861488407699038in"
+automatically generated](media/vv15.png){width="4.861488407699038in"
 height="3.3230555555555554in"}
 
 Select "Add a Source" from the side menu, then select the "Add or create
 simulation sources" button.
 
 ![Graphical user interface, text, application, email Description
-automatically generated](media/image16.png){width="4.8826968503937005in"
+automatically generated](media/vv16.png){width="4.8826968503937005in"
 height="3.3088615485564303in"}
 
 Select "Add Files" or click on the "+" button".
 
 ![Graphical user interface, text, application Description automatically
-generated](media/image17.png){width="4.95599956255468in"
+generated](media/vv17.png){width="4.95599956255468in"
 height="2.3562182852143483in"}
 
 Navigate to the location you placed the "Lab5\_RR\_tb.v" file and add it
 to your design.
 
 ![Graphical user interface, text, application, email Description
-automatically generated](media/image18.png){width="4.9640004374453195in"
+automatically generated](media/vv18.png){width="4.9640004374453195in"
 height="3.899073709536308in"}
 
 Run A Behavioral Simulation
@@ -176,19 +171,19 @@ After the simulation runs, select the Untitled 1 tab and expand the
 window (the square on the top right).
 
 ![Graphical user interface Description automatically
-generated](media/image19.png){width="3.800695538057743in"
+generated](media/vv19.png){width="3.800695538057743in"
 height="3.195670384951881in"}
 
 To zoom out to full view, click on the button with four diverging
 arrows. If the simulation looks like the above screenshot, the
 simulation is not yet done.
 
-![](media/image20.png){width="6.5in" height="0.5840277777777778in"}
+![](media/vv21.png){width="6.5in" height="0.5840277777777778in"}
 
 To finish the simulation, click on the "run simulation" button (shown
 above).
 
-![](media/image21.png){width="4.578431758530184in"
+![](media/vv20.png){width="4.578431758530184in"
 height="2.668794838145232in"}
 
 Zoom to fit (the four diverging arrows) and see if you can understand

@@ -171,10 +171,13 @@ Test Vector Results with "AND, OR, NOT" Gates (7 points)
 >
 > Paste the snapshot in the border box below.
 
-(The circuit box should expand to fit the size of your screen-shot)
 
-  --
-  --
+<div style="text-align: center; width:60%;">
+<!--  Take a screenshot, put the file in the ./media folder
+      and reference it with the link below -->
+<img src="./media/my-screenshot.png.png">
+</div>
+
 
 *Logisim Evolution* Circuit with "AND, OR, NOT" Gates (8 points)
 
