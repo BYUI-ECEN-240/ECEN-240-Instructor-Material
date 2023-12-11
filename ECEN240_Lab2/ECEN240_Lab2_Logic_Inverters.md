@@ -49,6 +49,7 @@ Figure 2 - Pin assignments of the TP2104 (PMOS) and VN2106 (NMOS) Transistors
 <p>
 <p style="text-indent:150px">
 <b>
+
 Figure 3 -- Potentiometer circuit used for inverter input voltage
 </b>
 </p>
