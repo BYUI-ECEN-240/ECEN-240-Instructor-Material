@@ -31,9 +31,9 @@ desktop. You will use this in step 5.
 
 7. There are too many FPGA's to choose from! You need to configure the project with the correct FPGA filter Settings:
 
-- Family: Artix-7.
-- Package: cpg236
-- Speed: -1
+    - Family: Artix-7.
+    - Package: cpg236
+    - Speed: -1
 
 8. Now you can easily find and select "**xc7a35tcpg236-1**" and then
 **"Next"**.
