@@ -59,14 +59,14 @@ hierarchy:
 
     -   Four 2-input XOR gates
 
-```{=html}
-<!-- -->
-```
 -   MUX4to1_4bit
 
     -   Three MUX2to1_4bit subcircuits
 
         -   Four MUX2to1_1bit subcircuits
+
+
+
 
 > As a starting point for this lab, all the subcircuits of this ALU
 > project have been created are contained in the template file called
