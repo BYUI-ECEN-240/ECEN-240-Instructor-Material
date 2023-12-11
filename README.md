@@ -9,6 +9,9 @@ This repository contains the material and instructions for students enrolled in 
     * [**"Getting Started with Logisim"** Instructions](ECEN240_Lab3/Getting_Started_with_Logisim_Evolution.md)
     * [**"Logic Laws and Theorums"**](ECEN240_Lab3/Using_Laws_and_Theorems_to_Simplify_an_Equation.md)
 * [LAB 4: **"SSI Circuits"** Instructions](ECEN240_Lab4/ECEN240_Lab4_SSI_Circuits.md)
+* [LAB 5: **\"Road Ripper\" Intro to System Verilog** Instructions](ECEN240_Lab5/ECEN240_Lab5_Road_Ripper.docx)
+    * [**Vivado Tutorial** Instructions](ECEN240_Lab5/ECEN240_Lab_5_Vivado_Tutorial.md)
+* [LAB 6: **ALU and Multiplexors** Instructions](ECEN240_Lab6/ECEN240_Lab6_ALU_and_Multiplexers.md)
 
 ### For Instructors
 * [Comments](#comments)
