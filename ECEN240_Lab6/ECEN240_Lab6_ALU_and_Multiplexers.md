@@ -251,13 +251,40 @@ Test the MUX4to1_4bit circuit using the "ALU_MUX_test.txt" test vector file, and
 
 Four-bit wide 4:1 MUX results (6 points)
 
-> Paste your *Logisim* four-bit wide 4:1 MUX circuit (including your
-> name) in the box below:
+>  Paste your *Logisim* four-bit wide 4:1 MUX circuit (*including your >    name*) by adding file into the ./media directory and adding the link here:
 
-  --
-  --
+![Logisim-4-Bit MUX Circuit](./media/my_circuit_snapshot.jpg)
 
-Four-bit wide 4:1 MUX *Logisim* Circuit (6 points)
+
+
+
+#### Fill in the following table <br>Four-bit wide 4:1 MUX *Logisim* Circuit (6 points)
+
+|A-Input|B-Input|S-Input| ALU Function|Expected Output|
+|-------|-------|-------|-------------|---------------|
+|       |       |       |             | <!--HERE -->  |
+| 1001  | 1001  |    00 |     XOR     |               |
+| 1001  | 1001  |    01 |     AND     |               |
+| 1001  | 1001  |    10 |     OR      |               |
+| 1001  | 1001  |    11 |     ADD     |               |
+| 0000  | 1111  |    00 |     XOR     |               |
+| 0000  | 1111  |    01 |     AND     |               |
+| 0000  | 1111  |    10 |     OR      |               |
+| 0000  | 1111  |    11 |     ADD     |               |
+| 1111  | 1111  |    00 |     XOR     |               |
+| 1111  | 1111  |    01 |     AND     |               |
+| 1111  | 1111  |    10 |     OR      |               |
+| 1111  | 1111  |    11 |     ADD     |               |
+| 1010  | 0101  |    00 |     XOR     |               |
+| 1010  | 0101  |    01 |     AND     |               |
+| 1010  | 0101  |    10 |     OR      |               |
+| 1010  | 0101  |    11 |     ADD     |               |
+| 0010  | 0011  |    00 |     XOR     |               |
+| 0010  | 0011  |    01 |     AND     |               |
+| 0010  | 0011  |    10 |     OR      |               |
+| 0010  | 0011  |    11 |     ADD     |               |
+
+
 
 
 ### **Putting Together all of the ALU Subcircuits**
@@ -275,52 +302,6 @@ Four-bit wide 4:1 MUX *Logisim* Circuit (6 points)
 
 -   When S = 11 the ALU outputs the 4-bit ADD
 
-  ----------------------------------------------------
-  A\      B\      S\      ALU\       Expected Output
-  Input   Input   Input   Function   
-  ------- ------- ------- ---------- -----------------
-                                     
-
-  1001    1001    00      XOR        
-
-  1001    1001    01      AND        
-
-  1001    1001    10      OR         
-
-  1001    1001    11      ADD        
-
-  0000    1111    00      XOR        
-
-  0000    1111    01      AND        
-
-  0000    1111    10      OR         
-
-  0000    1111    11      ADD        
-
-  1111    1111    00      XOR        
-
-  1111    1111    01      AND        
-
-  1111    1111    10      OR         
-
-  1111    1111    11      ADD        
-
-  1010    0101    00      XOR        
-
-  1010    0101    01      AND        
-
-  1010    0101    10      OR         
-
-  1010    0101    11      ADD        
-
-  0010    0011    00      XOR        
-
-  0010    0011    01      AND        
-
-  0010    0011    10      OR         
-
-  0010    0011    11      ADD        
-  ----------------------------------------------------
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab6 Quiz 2</span>
 (Link in iLearn Module)
