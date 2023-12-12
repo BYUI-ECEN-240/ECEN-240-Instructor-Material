@@ -21,8 +21,8 @@ together. The output multiplexer will select only one of these four
 functions to send to the output of the ALU. The block diagram of the
 completed ALU is shown below:
 
-<p style="text-indent:50px">
-<img src="media/image1.png" width="500" align="middle">
+<p style="text-indent:30px">
+<img src="media/image1.png" width="600" align="middle">
 </p>
 
 ### Lab 6 Part 1 - Getting started with the ALU circuit
@@ -129,22 +129,27 @@ hierarchy:
 -   When connecting to the splitter wires, take note of the small number that labels each of the bits. The "0" wire is the LSB.
 
 <p style="text-indent:50px">
-<img src="media/image6.png" width="200" align="middle">
+<img src="media/image6.tiff" width="200" align="middle">
 </p>
 
 -  Test your design
 
 > Expected output of the adder for the following inputs:
 
-  Inputs   Expected Output   
-  -------- ----------------- ------
-  A        B                 ADD4
-                             
-  1001     1001              
-  0000     1111              
-  1111     1111              
-  1010     0101              
-  0010     0011              
+<div style="border: 3px solid red; text-align: center; width:25%;">
+
+**ADD4 circuit**
+
+|**Input<p>A**|**Input<p>B**|**Expected<p>Output ADD4**|
+|-------------|-------------|--------------------------|
+|             |             |       <!--HERE -->       |
+|      1001   |      1001   |                          |
+|      0000   |      1111   |                          |
+|      1111   |      1111   |                          |
+|      1010   |      0101   |                          |
+|      0010   |      0011   |                          |
+
+</div> <br>
 
 Test the 4-bit adder circuit using the "ALU_ADD_test.txt" test vector file, and paste the screenshot of your results in the box below:
 
@@ -175,42 +180,55 @@ call the pin "AND4".
 
 Record the expected output of a 4-bit bit-wise AND circuit:
 
-  Inputs   Expected Output   
-  -------- ----------------- ------
-  A        B                 AND4
-                             
-  1001     1001              
-  0000     1111              
-  1111     1111              
-  1010     0101              
-  0010     0011              
+<div style="border: 3px solid red; text-align: center; width:25%;">
+
+**AND4 circuit**
+
+|**Input<p>A**|**Input<p>B**|**Expected<p>Output AND4**|
+|-------------|-------------|--------------------------|
+|             |             |       <!--HERE -->       |
+|      1001   |      1001   |                          |
+|      0000   |      1111   |                          |
+|      1111   |      1111   |                          |
+|      1010   |      0101   |                          |
+|      0010   |      0011   |                          |
+
+</div> <br>
 
 Repeat the above subcircuit creation process for the OR and XOR
 operations (the output names will be OR4 and XOR4, respectively).
 
-Record the expected output of a 4-bit bit-wise OR circuit:
+<div style="border: 3px solid red; text-align: center; width:25%;">
 
-  Inputs   Expected Output   
-  -------- ----------------- -----
-  A        B                 OR4
-                             
-  1001     1001              
-  0000     1111              
-  1111     1111              
-  1010     0101              
-  0010     0011              
+**OR4 circuit**
 
-Record the expected output of a 4-bit bit-wise XOR circuit:
+|**Input<p>A**|**Input<p>B**|**Expected<p>Output OR4**|
+|-------------|-------------|-------------------------|
+|             |             |     <!--HERE -->        |
+|      1001   |      1001   |                         |
+|      0000   |      1111   |                         |
+|      1111   |      1111   |                         |
+|      1010   |      0101   |                         |
+|      0010   |      0011   |                         |
 
-  Inputs   Expected Output   
-  -------- ----------------- ------
-  A        B                 XOR4
-                             
-  1001     1001              
-  0000     1111              
-  1111     1111              
-  1010     0101              
-  0010     0011              
+</div> <br>
+
+<div style="border: 3px solid red; text-align: center; width:25%;">
+
+**XOR4 circuit**
+
+|**Input<p>A**|**Input<p>B**|**Expected<p>Output XOR4**|
+|-------------|-------------|--------------------------|
+|             |             |     <!--HERE -->         |
+|      1001   |   1001      |                          |
+|      0000   |   1111      |                          |
+|      1111   |   1111      |                          |
+|      1010   |   0101      |                          |
+|      0010   |   0011      |                          |
+
+</div> <br>
+
+
 
 If desired, you can test your bit-wise logic circuits with the
 provided test-vector files to make sure they function correctly, but
@@ -232,17 +250,15 @@ from the results of the four ALU operations (ADD, AND, OR and XOR).
 The following is a block diagram of the MUX, but in practice, busses
 (splitters) will be used to simplify the appearance of the schematic:
 
-<p style="text-indent:50px">
-<img src="media/image7.png" width="200" align="middle">
+<p style="text-indent:25px">
+<img src="media/image7.tiff" width="200" align="middle">
 </p>
->
-> Build this MUX with the following subcircuits:
 
--   MUX2to1_1bit - A 1-bit, 2 to 1 MUX as shown in **Figure 10.2** of the
-    textbook.
 
+#### Build this MUX with the following subcircuits:
+
+-   MUX2to1_1bit - A 1-bit, 2 to 1 MUX as shown in **Figure 10.2** of the textbook.
 -   MUX2to1_4bit -- Four MUX2to1_1bit subcircuits as shown in **Figure 10.5**.
-
 -   MUX4to1_4bit -- Three MUX2to1_4bit subcircuits as shown in **Figure 10.4**.
 
 Manually check the circuit to make sure it behaves as expected.
