@@ -334,12 +334,13 @@ Paste the snapshot in the border box below.
 
                 #Screenshot goes here.   Delete these lines and replace with 
                 #a link with the following MarkDown URL syntax:
-                # See the example above for the 
 
                 ![](PATH_TO_FILE)
 
 
 ```
+
+> ![](PATH_TO_FILE)
 
   
 
@@ -354,16 +355,7 @@ in Windows, or "cmd-shift-4" in Mac OSx).
 >
  Paste the snapshot in the border box below.
 
-```bash
-
-                #Screenshot goes here.   Delete these lines and replace with 
-                #a link with the following MarkDown URL syntax:
-                # See the example above for the 
-
-                ![](PATH_TO_FILE)
-
-
-```
+![](PATH_TO_FILE)
 
 Snapshot of Logisim Evolution Circuit (20 points)
 

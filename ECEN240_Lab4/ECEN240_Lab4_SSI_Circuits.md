@@ -14,25 +14,29 @@
 ## Procedure:
 
 There will be two parts to this lab. Both parts of the lab will use the same truth table shown below. With this Truth table, you will:
+
 -   Simplify the Boolean expression two different ways (Using Boolean theorems and K-maps)
+
 -   Implement the simplified equation in Logisim 4 different ways
+
 -   Learn the merits of each type of simplification and implementation
 
 <div style="text-align: center; width:60%;">
 <img src="./media/lab4_tt.png" style="width: 60%;">
 </div>
 
-### Part 1
 
-<span style="color:red">Take Lab 3 Quiz 1!    
-This portion of the lab is intended to be completed after **Lesson 4 part 1**.
 
-</span>
+<br><br>
+
+# Part 1
+
+
 
 > Write the non-reduced (10 product) Boolean equation for the previous
 > truth table in SOP form:
 
-<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<div style="border: 3px solid red;font-weight:bold;width:100%;vertical-align:center">
 <p> </p>
 X  =     <!-- FILL IN   -->
 <p> </p>
@@ -43,7 +47,7 @@ X  =     <!-- FILL IN   -->
 > Simplify the equation using Boolean theorems, and write the reduced
 > equation:
 
-<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<div style="border: 3px solid red;font-weight:bold;width:100%;vertical-align:center">
 <p> </p>
 X  =     <!-- FILL IN   -->
 <p> </p>
@@ -60,12 +64,13 @@ X  =     <!-- FILL IN   -->
 -   Identify the prime implicants.
 
 
-| <br><br><br>AB&bsol;<br><br>CD<br> | 00 | 01 | 11 | 10 |
-|:----------------------------------:|----|----|:--:|----|
-| 00                                 |    |    |    |    |
-| 01                                 |    |    |    |    |
-| 11                                 |    |    |    |    |
-| 10                                 |    |    |    |    |
+  |CD\AB |  00  |  01  |  11  |  10  |
+  |:----:|:----:|:----:|:----:|:----:|
+  |  00  |      |      |      |      |
+  |  01  |      |      |      |      |
+  |  11  |      |      |      |      |
+  |  10  |      |      |      |      |
+  |
 
 
 
@@ -84,7 +89,7 @@ X  =     <!-- FILL IN   -->
 
 List the minterms that are present in the **largest** prime implicant loop (m0, m1, ...):
 
-<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<div style="border: 3px solid red;font-weight:bold;width:100%;vertical-align:center">
 <p> </p>
 <!-- FILL IN   -->
   Loop1 = Σm( )
@@ -97,7 +102,7 @@ List the minterms that are present in the **largest** prime implicant loop (m0, 
 
 List the minterms that are present in the **smallest** prime implicant loop:
 
-<div style="border: 3px solid red;font-weight:bold;width:50%;vertical-align:center">
+<div style="border: 3px solid red;font-weight:bold;width:100%;vertical-align:center">
 <p> </p>
   Loop2 = Σm( ) <!-- FILL IN   -->
 <p> </p>
@@ -108,27 +113,31 @@ Verify that the K-map based simplification matches your Boolean theorem-based si
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 4 Quiz 1</span>
 (Link in iLearn Module) **(10 points)**
 
+<br>
+
+___
+
+<br>
 
 **Build Version 1 of the Circuit: Use AND, OR and NOT Gates**
 
 > Implement the reduced Boolean equation in *Logisim* using AND, OR, and
 > NOT gates. Use the following pin names:
 
-  -----------------------------------------
-  Input Names\               Output Names
-  (not all will be needed)   
-  -------------------------- --------------
-  A                          X
 
-  B                          
 
-  C                          
 
-  D                          
-  -----------------------------------------
+  |**Input Names**<br>**(not all will be needed)** |  **Output Names**  |
+  |:--------------:|:------------------:|
+  |       A        |          X         |
+  |       B        |                    |
+  |       C        |                    | 
+  |       D        |                    |
+  |
+ 
 
-> Make your schematic nice and neat (construction quality will affect
-> the score you receive). You can verify its functionality by manually
+> Make your schematic <span style="color:red;">nice and neat (construction quality will affect
+> the score you receive).</span> You can verify its functionality by manually
 > testing the input combinations shown in the original truth table.
 >
 > Once you are convinced your *Logisim* implementation is correct,
@@ -156,8 +165,19 @@ Verify that the K-map based simplification matches your Boolean theorem-based si
 (The "test vector" border box will expand to fit a screen-shot of your
 test results)
 
-  --
-  --
+```bash
+
+                #Screenshot goes here.   Delete these lines and replace with 
+                #a link with the following MarkDown URL syntax:
+                 
+
+                ![](PATH_TO_FILE)
+
+
+```
+
+  <!-- Replace with your image:  -->
+>![](./media/my-screenshot.png.png)
 
 Test Vector Results with "AND, OR, NOT" Gates (7 points)
 
@@ -166,18 +186,12 @@ Test Vector Results with "AND, OR, NOT" Gates (7 points)
 > in Windows, or "cmd-shift-4" in Mac OSx). You can zoom in on the
 > circuit using the up and down arrows found at the bottom-left corner.
 >
-> ![](media/image1.png){width="2.2136745406824145in"
-> height="0.8101596675415573in"}
+> ![](media/image2.png)
 >
 > Paste the snapshot in the border box below.
-
-
-<div style="text-align: center; width:60%;">
-<!--  Take a screenshot, put the file in the ./media folder
-      and reference it with the link below -->
-<img src="./media/my-screenshot.png.png">
-</div>
-
+>
+><!-- Replace with your image:  -->
+>![](PATH_TO_FILE)
 
 *Logisim Evolution* Circuit with "AND, OR, NOT" Gates (8 points)
 
@@ -191,25 +205,26 @@ Test Vector Results with "AND, OR, NOT" Gates (7 points)
 > (SSI\_test.txt).
 >
 > Paste a snapshot of your test results in the submission box below:
-
-  --
-  --
+>
+>  <!-- Replace with your image:  -->
+>![](PATH_TO_FILE)
 
 Test Vector Results Using **NAND Gates** Only (7 points)
 
 > Paste a snapshot of your circuit diagram (**including your name**) in
 > the submission box below:
-
-  --
-  --
+>
+> <!-- Replace with your image:  -->
+>![](PATH_TO_FILE)
 
 *Logisim Evolution* Circuit Diagram Using **NAND Gates** Only (8 points)
 
-**\*\*\*Take Lab 4: Quiz 2\*\*\***
+<span style="font-weight:bold;color:red;font-size:18px">**\*\*\*Take Lab 4: Quiz 2\*\*\***</span>
+
 
 **(16-point quiz)**
 
-**Lab 2 Part 2**
+# **Lab 2 Part 2**
 
 Procedure:
 
@@ -221,12 +236,17 @@ Procedure:
     using only the 74HC00 (2-input NAND). Compare the operation of the
     NAND only circuit with the 3-chip solution.
 
-**\*\*\*Pass off circuit to TA or Instructor, take Lab 4: Quiz 3
-\*\*\***
+
+    <span style="font-weight:bold;color:red;font-size:18px">**\*\*\*Pass off circuit to TA or Instructor, take Lab 4: Quiz 3
+\*\*\***</span>
+
+
 
 **(24-point quiz)**
 
-**Conclusions Statement**
+<br>
+
+## **Conclusions Statement (20 Points)**
 
 > Write a brief conclusions statement that discusses the original
 > purposes of the lab found at the beginning of this lab document.
@@ -245,11 +265,10 @@ Procedure:
 
 (The conclusions box will expand as you write)
 
-  --
-  --
 
-> Conclusions Statement (20 points)
->
-> Congratulations, you have completed the lab!
->
-> You may now submit this document.
+```
+[ FILL IN YOUR CONCLUSION STATEMENTS HERE ]
+```
+---
+### Congratulations, you have completed Lab!
+Save and you may now submit this markdown document on Canvas.
