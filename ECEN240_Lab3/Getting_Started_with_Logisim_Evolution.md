@@ -20,7 +20,7 @@ version is ***3.8.0***, and can be found
 
 [LINK HERE](https://github.com/logisim-evolution/logisim-evolution/releases)
 <p style="text-indent:30px">
-<img src="media/Install_Graphic.png" width="600" align="center">
+<img src="media/Install_Graphic.png" width="608" align="center">
 </p>
 
 

@@ -34,11 +34,11 @@ verify the expected results for each of the following gates:
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 1</span>
 
-<!--
+
 
 <div style="border: 3px solid red; text-align: center; width:30%;">
 
--->
+
 
 
 **NAND gate**
@@ -52,10 +52,10 @@ verify the expected results for each of the following gates:
 |   1   |   1   |                     |                     |
 |       |       |                     |                     |
 
-<!--
+
 </div>
 
--->
+
 
 <br>
 
@@ -238,32 +238,26 @@ sum-of-products form:
 > outputs based on only on the equations. Then compare with the original
 > truth table.
 
-+------------+-------------------+------------+-------------+-----------+
-| > *Inputs* | > *Outputs*       |            |             |           |
-+============+===================+============+=============+===========+
-| > **Cord** | > **Low Voltage** | > **Temp** | > **Alarm** | > **Fan** |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 0               | > 0        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 0               | > 1        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 1               | > 0        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 0        | > 1               | > 1        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 0               | > 0        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 0               | > 1        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 1               | > 0        |             |           |
-+------------+-------------------+------------+-------------+-----------+
-| > 1        | > 1               | > 1        |             |           |
-+------------+-------------------+------------+-------------+-----------+
+
+
+
+|  **Cord** |  **Low Voltage** |  **Temp** |  **Alarm** |  **Fan**  |
+|-----------|------------------|-----------|------------|-----------|
+|     0     |         0        |     0     |            |           |
+|     0     |         0        |     1     |            |           |
+|     0     |         1        |     0     |            |           |
+|     0     |         1        |     1     |            |           |
+|     1     |         0        |     0     |            |           |
+|     1     |         0        |     1     |            |           |
+|     1     |         1        |     0     |            |           |
+|     1     |         1        |     1     |            |           |
 
 <span style="font-weight:bold;color:red;font-size:18px">Take Lab 3 Quiz 2</span>
 (Link in iLearn Module) **(12 points)**
 
-Part 3. Logisim Evolution Circuit.
+---
+
+### Part 3. Logisim Evolution Circuit.
 
 > In the real-world implementation of this circuit, the digital inputs
 > would be coming from sensors and electronic circuits and the outputs
@@ -278,11 +272,15 @@ Part 3. Logisim Evolution Circuit.
 
 -   Place 3 input pins and two output pins. Use the following pin names:
 
-  **Input Pin Names**   **Output Pin Names**
-  --------------------- ----------------------
-  Cord                  Alarm
-  Voltage               Fan
-  Temp                  
+|  **Input Pin Names** |  **Output Pin Names** |
+|----------------------|-----------------------|
+|         Cord         |         Alarm         |
+|        Voltage       |          Fan          |
+|         Temp         |                       |
+|
+
+     
+
 
 -   Place the components (AND gates, OR gates, Inverters), making sure
     that the correct number of pins is configured for each gate.
@@ -301,7 +299,8 @@ Part 3. Logisim Evolution Circuit.
 -   Test your implementation (try all of the possibilities) and make
     sure the circuit works as expected.
 
-Part 4. After you have completed the implementation of your laptop fan
+### Part 4. 
+After you have completed the implementation of your laptop fan
 and alarm circuit, you will need to verify its functionality using the
 "test vector" tool available in *Logisim Evolution*.
 
@@ -327,21 +326,9 @@ and alarm circuit, you will need to verify its functionality using the
 (The "test vector" border box will expand to fit a screen-shot of your
 test results)
 
-  --
-  --
 
-Snapshot of Test Vector Results (10 points)
-
-Take a "screenshot" of the circuit (including your name), and paste the
-screenshot in the submission box below (the "snipping tool" may be used
-in Windows, or "cmd-shift-4" in Mac OSx).
-
-You can resize the circuit using the up and down arrows found at the bottom-left corner.
->
-> ![](media/image2.png){width="2.2136745406824145in"
-> height="0.8101596675415573in"}
->
-> Paste the snapshot in the border box below.
+Paste the snapshot in the border box below.
+>Snapshot of Test Vector Results (10 points)
 
 ```bash
 
@@ -349,7 +336,31 @@ You can resize the circuit using the up and down arrows found at the bottom-left
                 #a link with the following MarkDown URL syntax:
                 # See the example above for the 
 
-                ![](URL_TO_FILE)
+                ![](PATH_TO_FILE)
+
+
+```
+
+  
+
+
+Take a "screenshot" of the circuit (including your name), and paste the
+screenshot in the submission box below (the "snipping tool" may be used
+in Windows, or "cmd-shift-4" in Mac OSx).
+
+>You can resize the circuit using the up and down arrows found at the bottom-left corner:
+>
+>![](media/image2.png)
+>
+ Paste the snapshot in the border box below.
+
+```bash
+
+                #Screenshot goes here.   Delete these lines and replace with 
+                #a link with the following MarkDown URL syntax:
+                # See the example above for the 
+
+                ![](PATH_TO_FILE)
 
 
 ```
@@ -389,7 +400,7 @@ take Lab 3: Quiz 4
 
 Write a brief conclusions statement that discusses all of the original purposes of the lab (repeated below). Please discuss your observations on all four bullets. Please use complete sentences and correct grammar as you express your thoughts (a lengthy report is not necessary):
 
-**Purposes (repeated)** 
+### **Purposes (repeated):** 
 1. Review the basic logic gates.  logic simulation.
 2. Learn how real-world problems may be solved by solving a simple digital design problem.
 3. Learn how to implement a digital circuit using the 74xx family of logic gates

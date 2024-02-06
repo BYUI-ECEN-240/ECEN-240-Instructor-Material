@@ -1,6 +1,6 @@
-Using Laws and Theorems to Simplify an Equation
+### Using Laws and Theorems to Simplify an Equation
 
-Lab 3 Helps
+# Lab 3 Helps
 
 Lab 3 requires the use of at least two of the theorems on the "Laws and
 Theorems of Boolean Algebra" sheet to simplify one of the signals. Here
@@ -16,9 +16,9 @@ Alternatively, we can identify that A'B'C is only one variable different
 than A'BC (the B',B). Which one of these should we pick to simplify? Why
 not use both of these?
 
-F = AB'C + A'B'C + A'BC
+F = AB'C + <span style="color:#00C61A">A'B'C</span> + A'BC
 
-= AB'C + A'B'C + A'B'C + A'BC Theorem 3
+= AB'C + <span style="color:#00C61A">A'B'C</span> + <span style="color:#00C61A">A'B'C</span> + A'BC <span style="color:#00C61A">Theorem 3</span>
 
 = (AB'C + A'B'C) + (A'B'C + A'BC) Theorem 7
 
