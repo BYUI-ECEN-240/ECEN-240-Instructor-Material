@@ -250,9 +250,9 @@ from the results of the four ALU operations (ADD, AND, OR and XOR).
 The following is a block diagram of the MUX, but in practice, busses
 (splitters) will be used to simplify the appearance of the schematic:
 
-<p style="text-indent:25px">
-<img src="media/image7.tiff" width="200" align="middle">
-</p>
+
+
+![Logisim 4-Bit MUX Test Vector](./media/my_circuit_snapshot.jpg)
 
 
 #### Build this MUX with the following subcircuits:
