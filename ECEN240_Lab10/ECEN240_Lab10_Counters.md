@@ -1,11 +1,8 @@
 ECEN 240 - Lab 10 -- Counters
 =============================
 
-Name:
-=====
+## Name: <span style="color:red;">    [insert your name here]</span>
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-==============================================================================================================================================
 
 Purposes:
 =========
@@ -22,8 +19,8 @@ Purposes:
 Procedure:
 ==========
 
-> In this lab you will implement three different globally synchronous
-> counters:
+In this lab you will implement three different globally synchronous
+counters:
 
 -   A 3-bit **Up-Counter**
 
@@ -35,8 +32,6 @@ There will be a 3-part quiz\--one part for each counter. The quiz parts
 are intended to be taken before you build the counter so that you can
 verify that your design equations are correct.
 
-**\
-**
 
 > **Up-Counter Design**
 >
@@ -46,74 +41,62 @@ verify that your design equations are correct.
 > (remember that globally synchronous means that the clock inputs of all
 > the FFs are connected to the same clock signal):
 
-  **Current State**            **Next State**                        
-  ------------------- -------- ---------------- -- -------- -------- --------
-  **Q2**              **Q1**   **Q0**              **N2**   **N1**   **N0**
-                                                                     
-  **0**               **0**    **0**                                 
-  **0**               **0**    **1**                                 
-  **0**               **1**    **0**                                 
-  **0**               **1**    **1**                                 
-  **1**               **0**    **0**                                 
-  **1**               **0**    **1**                                 
-  **1**               **1**    **0**                                 
-  **1**               **1**    **1**                                 
+
+
+
+| **Current State** | |   |   | **Next State** ||        |
+|:------:|:------:|:-----:|:-:|:------:|:------:|:------:|
+
+| **Q2** | **Q1** | **Q0**|   | **N2** | **N1** | **N0** |
+|:------:|:------:|:-----:|:-:|:------:|:------:|:------:|
+|   0    |   0    |   0   |   |        |        |        |
+|   0    |   0    |   1   |   |        |        |        |
+|   0    |   1    |   0   |   |        |        |        |
+|   0    |   1    |   1   |   |        |        |        |
+|   1    |   0    |   0   |   |        |        |        |
+|   1    |   0    |   1   |   |        |        |        |
+|   1    |   1    |   0   |   |        |        |        |
+|   1    |   1    |   1   |   |        |        |        |
+
 
 > **Up-Counter Input Forming Logic (IFL) K-Maps**
 >
 > Fill out the up-counter K-Maps for the next-state variables, N2, N1,
 > and N0 and loop the prime implicants (using colors or shading):
 
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
 
-  01          
+### K-Map for N2
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  11          
+### K-Map for N1
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  10          
-  ---------------
+### K-Map for N0
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-> Kmap for N2
 
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
 
-  01          
 
-  11          
 
-  10          
-  ---------------
-
-> Kmap for N1
-
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
-
-  01          
-
-  11          
-
-  10          
-  ---------------
-
-> Kmap for N0
->
-> Write the minimized Boolean equations for the next state signals, N2,
-> N1, and N0:
+# Write the minimized Boolean equations for the next state signals, N2, N1, and N0:
 
   ------
   N2 =
@@ -129,11 +112,11 @@ verify that your design equations are correct.
 
 To verify your design is correct:
 
-\*\*\* Take the First part of Lab 10 Quiz 1 \*\*\*
+## <span style="color:red;">\*\*\* Take the First part of Lab 10 Quiz 1 \*\*\*</span>
 
 (This is a 3-part quiz, and the first part is worth 7 points)
 
-**Build the Up-Counter Input Forming Logic (IFL) Subcircuit**
+## **Build the Up-Counter Input Forming Logic (IFL) Subcircuit**
 
 > Download the "Up\_Counter.circ" template from the module for Lab 10
 > and open this file in Logisim Evolution. Open the subcircuit for the
@@ -145,22 +128,18 @@ To verify your design is correct:
 
 Paste a snapshot of your IFL test results in the submission box below:
 
-  --
-  --
-
-Test Vector Results for the Up-Counter IFL (5 points)
+> ![](Your_Screenshot_here.png)
+> Test Vector Results for the Up-Counter IFL (5 points)
 
 > Paste a snapshot of your IFL circuit diagram (**including your name**)
 > in the submission box below:
 
-  --
-  --
-
-*Logisim Evolution* Circuit Diagram of Up-Counter IFL (5 points)
+> ![](Your_Screenshot_here.png)
+> *Logisim Evolution* Circuit Diagram of Up-Counter IFL (5 points)
 
 **Completing the Up-Counter**
 
-> The counter will not "count" without the flip flops:
+The counter will not "count" without the flip flops:
 
 -   Open the "main" circuit and connect the IFL next-state signals (N2,
     N1, and N0) to the flip flops.
@@ -193,24 +172,19 @@ Test Vector Results for the Up-Counter IFL (5 points)
         ½ clock cycle you wish to simulate (simulate one complete
         counting sequence):
 
-![](media/image1.tiff){width="0.7777777777777778in"
-height="0.6944444444444444in"}
+![](media/image1.png)
 
-> Paste your Chronogram timing simulation of the completed up-counter in
-> the box below:
 
-  --
-  --
 
-Timing Diagram of the Up-Counter Circuit (5 points)
+Paste your Chronogram timing simulation of the completed up-counter in the box below:
 
-> Paste a snapshot of your complete circuit diagram (**including your
-> name**) in the submission box below:
+> ![](Your_Screenshot_here.png)
+>Timing Diagram of the Up-Counter Circuit (5 points)
 
-  --
-  --
+Paste a snapshot of your complete circuit diagram (**including yourname**) in the submission box below:
 
-*Logisim Evolution* Complete Circuit Diagram of Up-Counter (5 points)
+> ![](Your_Screenshot_here.png)
+>*Logisim Evolution* Complete Circuit Diagram of Up-Counter (5 points)
 
 **Ring Counter Design**
 
@@ -226,74 +200,56 @@ Timing Diagram of the Up-Counter Circuit (5 points)
 > Fill out the expected next state values in the transition table for a
 > 3-bit ring counter. Use "don\'t cares" for unused states: xxx
 
-  **Current State**            **Next State**                        
-  ------------------- -------- ---------------- -- -------- -------- --------
-  **Q2**              **Q1**   **Q0**              **N2**   **N1**   **N0**
-                                                                     
-  **0**               **0**    **0**                                 
-  **0**               **0**    **1**                                 
-  **0**               **1**    **0**                                 
-  **0**               **1**    **1**                                 
-  **1**               **0**    **0**                                 
-  **1**               **0**    **1**                                 
-  **1**               **1**    **0**                                 
-  **1**               **1**    **1**                                 
+| **Current State** | |   |   | **Next State** ||        |
+|:------:|:------:|:-----:|:-:|:------:|:------:|:------:|
+
+| **Q2** | **Q1** | **Q0**|   | **N2** | **N1** | **N0** |
+|:------:|:------:|:-----:|:-:|:------:|:------:|:------:|
+|   0    |   0    |   0   |   |        |        |        |
+|   0    |   0    |   1   |   |        |        |        |
+|   0    |   1    |   0   |   |        |        |        |
+|   0    |   1    |   1   |   |        |        |        |
+|   1    |   0    |   0   |   |        |        |        |
+|   1    |   0    |   1   |   |        |        |        |
+|   1    |   1    |   0   |   |        |        |        |
+|   1    |   1    |   1   |   |        |        |        |
+
 
 > **Ring Counter IFL K-Maps**
 >
 > Fill out the ring-counter K-Maps for the next-state variables, N2, N1,
 > and N0 and loop the prime implicants (using colors or shading):
 
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
+### K-Map for N2
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  01          
+### K-Map for N1
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  11          
+### K-Map for N0
+|Q1Q0\Q2 | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  10          
-  ---------------
 
-> Kmap for N2
 
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
-
-  01          
-
-  11          
-
-  10          
-  ---------------
-
-> Kmap for N1
-
-  ---------------
-  Q2\     0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
-
-  01          
-
-  11          
-
-  10          
-  ---------------
-
-> Kmap for N0
->
-> Write the minimized Boolean equations for the next state signals, N2,
-> N1, and N0:
+### Write the minimized Boolean equations for the next state signals, N2, N1, and N0:
 
   ------
   N2 =
@@ -307,14 +263,9 @@ Timing Diagram of the Up-Counter Circuit (5 points)
   N0 =
   ------
 
-> What do you notice about the minimized Boolean equations? Will you
-> need any logic gates to implement this design? Can you anticipate
-> would happen if you do not use a reset signal to set the initial count
-> to "001"?
->
-> To verify your design is correct:
+What do you notice about the minimized Boolean equations? Will you need any logic gates to implement this design? Can you anticipate would happen if you do not use a reset signal to set the initial count to "001"? To verify your design is correct:
 
-\*\*\* Take the Second part of Lab 10 Quiz 1 \*\*\*
+## <span style="color:red;">\*\*\* Take the Second part of Lab 10 Quiz 1 \*\*\* </span>
 
 (This is a 3-part quiz, and the second part is worth 7 points)
 
@@ -326,7 +277,8 @@ Timing Diagram of the Up-Counter Circuit (5 points)
 > entire design can be completed with 3 flip flops (but don't forget the
 > reset signal)!
 >
-> To build the complete counter:
+
+To build the complete counter:
 
 -   Connect the flip flops to each other.
 
@@ -342,30 +294,27 @@ Timing Diagram of the Up-Counter Circuit (5 points)
 -   Simulate the counter using the *Logisim* "Chronogram" tool as you
     did in the Up-Counter (remember the "sysclk" pin).
 
-> You will not need a test vector file to verify that your circuit is
-> functional, but after you have verified that your ring counter is
-> counting correctly, run the Chronogram timing simulation.
->
-> Paste your Chronogram timing simulation of the completed ring counter
-> in the box below:
+You will not need a test vector file to verify that your circuit is functional, but after you have verified that your ring counter is counting correctly, run the Chronogram timing simulation.
 
-  --
-  --
+Paste your Chronogram timing simulation of the completed ring counter
+in the box below:
 
-Timing Diagram of the Ring Counter Circuit (5 points)
 
-> Paste a snapshot of your circuit diagram (**including your name**) in
-> the submission box below:
+> ![](Your_Screenshot_here.png)
+>Timing Diagram of the Ring Counter Circuit (5 points)
 
-  --
-  --
 
-*Logisim Evolution* Circuit Diagram of the Ring Counter (5 points)
 
-**\
-**
 
-**Gray Code Counter Design**
+Paste a snapshot of your circuit diagram (**including your name**) in
+the submission box below:
+
+> ![](Your_Screenshot_here.png)
+>*Logisim Evolution* Circuit Diagram of the Ring Counter (5 points)
+
+
+
+## **Gray Code Counter Design**
 
 > Design a 2-bit synchronous counter that has an increment (Inc) input,
 > with the count sequence given below, using D flip flops. Use AND, OR
@@ -379,74 +328,57 @@ Timing Diagram of the Ring Counter Circuit (5 points)
 > Fill out the required next state values in the transition table for
 > the Gray Code Counter:
 
-  **Current State**            **Next State**               
-  ------------------- -------- ---------------- -- -------- --------
-  **Inc**             **Q1**   **Q0**              **N1**   **N0**
-                                                            
-  **0**               **0**    **0**                        
-  **0**               **0**    **1**                        
-  **0**               **1**    **0**                        
-  **0**               **1**    **1**                        
-  **1**               **0**    **0**                        
-  **1**               **0**    **1**                        
-  **1**               **1**    **0**                        
-  **1**               **1**    **1**                        
+| **Current State** | |   | **Next State** ||        |
+|:------:|:------:|:-----:|:------:|:------:|:------:|
+
+| **INC** | **Q1** | **Q0**|   | **N1** | **N0** |
+|:-------:|:------:|:-----:|:-:|:------:|:------:|
+|    0    |   0    |   0   |   |        |        |
+|    0    |   0    |   1   |   |        |        |
+|    0    |   1    |   0   |   |        |        |
+|    0    |   1    |   1   |   |        |        |
+|    1    |   0    |   0   |   |        |        |
+|    1    |   0    |   1   |   |        |        |
+|    1    |   1    |   0   |   |        |        |
+|    1    |   1    |   1   |   |        |        |
 
 > **Gray Code Counter IFL K-Maps**
 >
 > Fill out the Gray-code counter K-Maps for the next-state variables N1
 > and N0 and loop the prime implicants (using colors or shading):
 
-  ---------------
-  Inc\    0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
+### K-Map for N1
+|Q1Q0\Inc | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  01          
+### K-Map for N0
+|Q1Q0\Inc | 0 |   | 1 |
+|:------:|:-:|:-:|:-:|
+|   00   |   |   |   |
+|   01   |   |   |   |
+|   11   |   |   |   |
+|   10   |   |   |   |
+|        |   |   |   |
 
-  11          
 
-  10          
-  ---------------
-
-> Kmap for N1
-
-  ---------------
-  Inc\    0   1
-  \           
-  Q1 Q0       
-  ------- --- ---
-  00          
-
-  01          
-
-  11          
-
-  10          
-  ---------------
-
-> Kmap for N0
->
-> Write the minimized Boolean equations for the next state signals N1
-> and N0:
-
+### Write the minimized Boolean equations for the next state signals N1 and N0:
   ------
   N1 =
   ------
-
   ------
   N0 =
   ------
 
-> To verify your design is correct:
-
-\*\*\* Take the Third part of Lab 10 Quiz 1 \*\*\*
-
+To verify your design is correct:
+## <span style="color:red;">\*\*\* Take the Third part of Lab 10 Quiz 1 \*\*\*</span>
 (This third part is worth 6 points)
 
-**Build the Gray Code Counter Input Forming Logic (IFL) Subcircuit**
+## **Build the Gray Code Counter Input Forming Logic (IFL) Subcircuit**
 
 -   Download the "Gray\_Counter.circ" file from the Lab 9 module and
     open it in Logisim Evolution.
@@ -459,21 +391,18 @@ Timing Diagram of the Ring Counter Circuit (5 points)
 -   Use the *Gray\_Counter\_test.txt* test vector file to verify your
     IFL is working correctly.
 
-> Paste a snapshot of your test results of the Gray Code IFL in the
-> submission box below:
+Paste a snapshot of your test results of the Gray Code IFL in the submission box below:
 
-  --
-  --
+>> ![](Your_Screenshot_here.png)
+>Test Vector Results of Gray Code Counter IFL Subcircuit (5 points)
 
-Test Vector Results of Gray Code Counter IFL Subcircuit (5 points)
 
-> Paste a snapshot of your IFL circuit diagram (**including your name**)
-> in the submission box below:
 
-  --
-  --
+Paste a snapshot of your IFL circuit diagram (**including your name**)
+in the submission box below:
 
-Circuit Diagram of Cray Code Counter IFL Subcircuit (5 points)
+> ![](Your_Screenshot_here.png)
+>Circuit Diagram of Cray Code Counter IFL Subcircuit (5 points)
 
 **Gray Code Counter Construction**
 
@@ -497,71 +426,57 @@ Circuit Diagram of Cray Code Counter IFL Subcircuit (5 points)
 -   Simulate the counter using the *Logisim* "Chronogram" tool as you
     did for the previous two counters
 
-> Paste your Chronogram timing simulation of the completed Gray Code
-> Counter in the box below (you will need "Inc" to be set to "1" for
-> this simulation to work):
+Paste your Chronogram timing simulation of the completed Gray Code Counter in the box below (you will need "Inc" to be set to "1" for this simulation to work):
 
-  --
-  --
 
-Timing Diagram of the Gray Code Counter Circuit (5 points)
+> ![](Your_Screenshot_here.png)
+>Timing Diagram of the Gray Code Counter Circuit (5 points)
 
-> Paste a snapshot of your complete Gray Code Counter circuit diagram
-> (**including your name**) in the submission box below:
+Paste a snapshot of your complete Gray Code Counter circuit diagram (**including your name**) in the submission box below:
 
-  --
-  --
-
-*Logisim Evolution* Circuit Diagram of 2-bit Gray Counter with Inc (5
+> ![](Your_Screenshot_here.png)
+>*Logisim Evolution* Circuit Diagram of 2-bit Gray Counter with Inc (5
 points)
 
-**Part 2**
+# **Part 2**
 
-**Design the Counters using SystemVerilog**
+## **Design the Counters using SystemVerilog**
 
-> **Refer to the SystemVerilog instruction document to implement the
-> Counters on a Basys3 board.**
->
-> Paste your SystemVerilog "*Counters" module code in the box* below:
+### **Refer to the SystemVerilog instruction document to implement the Counters on a Basys3 board.**
 
-  --
-  --
+Paste your SystemVerilog "*Counters" module code in the box* below:
 
-Counters Module Code (10 points)
+> [Your Code Here]
+>Counters Module Code (10 points)
 
-\*\*\*Pass Off the "Counters" circuit Implementation Using Lab10 Quiz
-2\*\*\*
 
+
+## <span style="color:red;">\*\*\*Pass Off the "Counters" circuit ImplementationUsing Lab10 Quiz 2\*\*\*</span>
 (10 points)
 
-**\
-**
 
-**Conclusions Statement**
+# **Conclusions Statement**
 
-> Write a brief conclusions statement that discusses the original
-> purposes of the lab found at the beginning of this lab document:
+Write a brief conclusions statement that discusses the original purposes of the lab found at the beginning of this lab document:
 
 -   What kinds of applications require flip flops?
 
 -   What are the key components of a synchronous counters?
 
--   How can digital simulation software aid in designing and verifying
-    > sequential logic circuits?
+-   How can digital simulation software aid in designing and verifying sequential logic circuits?
 
--   In what way are asynchronous set and reset signals useful in
-    > implementing synchronous, flip flop-based circuits.
+-   In what way are asynchronous set and reset signals useful in implementing synchronous, flip flop-based circuits.
 
-> Please use complete sentences and correct grammar to express your
-> thoughts:
+Please use complete sentences and correct grammar to express your thoughts:
 
 (The conclusions box will expand as you write)
 
-  --
-  --
+>
+>
+>
+>
 
-> Conclusions Statement (10 points)
->
-> Congratulations, you have completed the lab!
->
-> You may now submit this document.
+Conclusions Statement (10 points)
+
+Congratulations, you have completed the lab!
+You may now submit this document.
