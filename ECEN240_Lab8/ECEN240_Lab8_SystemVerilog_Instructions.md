@@ -42,8 +42,7 @@
 -   When you click on the "Finish" button a window opens for you to
     describe the ports. Type the following and then "OK":
 
-![](media/image1.png){width="6.291666666666667in"
-height="6.680555555555555in"}
+![](media/Lab8_ports.png)
 
 > 4\. The "seg" signal is 7 bits wide and controls the seven segments in
 > the seven segment displays. The "an" signal is four bits wide and
@@ -71,14 +70,12 @@ height="6.680555555555555in"}
 
 -   Insert "logic" after the "output" on the "ALU\_out\_FF" signal.
 
-![](media/image2.png){width="2.7594695975503063in"
-height="1.510515091863517in"}
+![](media/Lab8_code0.png)
 
 > 5\. Within the of the "Lab8\_ALU\_FF" module, instantiate the
 > "Lab6\_ALU" module and the "clk\_div" module as shown:
 
-![](media/image3.png){width="6.222222222222222in"
-height="3.6666666666666665in"}
+![](media/Lab8_code.png)
 
 > 6\. Add flip flops to store the output of the ALU
 
@@ -96,7 +93,7 @@ need to tell Vivado to use 3.3V by selecting the "LVCMOS33" for the I/O
 Std of each of these signals (to see how these pin assignments were
 made, look at the last figure in this document).
 
-![](media/image4.png){width="6.5in" height="5.686111111111111in"}
+![](media/Lab8_pins.png)
 
 9\. Now run the synthesis step (side menu). If you are prompted to save
 the constraint file, call it "Lab8\_ALU\_FF".
@@ -133,4 +130,4 @@ You are now running the ALU with flip flops on the Basys3!
 -   View the output on the middle four LEDs (above the switches). This
     output will not update until the rising edge of clk\_slow.
 
-![](media/image5.emf){width="6.5in" height="8.408333333333333in"}
+![](media/Lab8_diagram.png)

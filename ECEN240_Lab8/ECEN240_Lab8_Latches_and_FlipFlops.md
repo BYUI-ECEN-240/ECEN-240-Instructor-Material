@@ -1,14 +1,14 @@
 ECEN 240 - Lab 8 -- Sequential Circuits -- Latches and Flip Flops
 =================================================================
 
-Name: 
-=====
+### NAME:  <span style="color:red;">    [insert your name here]
+</span>
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-============================================================================================================================================
+---
 
-Purposes:
-=========
+
+## Purposes:
+
 
 1.  Become familiar with:
 
@@ -20,8 +20,8 @@ Purposes:
 
 4.  Learn how to implement flip flops using SystemVerilog
 
-Procedure:
-==========
+## Procedure:
+
 
 This lab uses *Logisim* *Evolution* to simulate latches and Flip Flops,
 and then implements the Flip Flop circuits in SystemVerilog.
@@ -39,9 +39,9 @@ circuits.
 
 -   In part 3 the flip flop circuits will be built using SystemVerilog.
 
-**Part 1 -- Latches and Gated latches**
+# **Part 1 -- Latches and Gated latches**
 
-**NOR SR Latches**
+### **NOR SR Latches**
 
 > The S and R signals of a NOR-based latch are normally set to "0". One
 > of the two signals must transition from low-high in order for
@@ -56,58 +56,71 @@ circuits.
 > the truth (or transition) table shown below (compare with figure 15.4
 > of the textbook):
 
-  NOR-Based SR Latch                                                                                                                                                                                                                                               
-  ------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------ --------------------------------- -- ---------------------------------- ------ -- ---- -----
-  Inputs (for brevity, Q' not shown)                                                                                                                                        Expected Next State of Q and Q'      Simulated Next State of Q and Q'                  
-  S                                                                                    R                                                                                    Q                                    Q+                                 Q'+       Q+   Q'+
-                                                                                                                                                                                                                                                                   
-  0                                                                                    0                                                                                    0                                    0                                  1              
-  0                                                                                    0                                                                                    1                                    1                                  0              
-  0                                                                                    ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   0                                    0                                  1              
-  0                                                                                    ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   1                                    0                                  1              
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   0                                                                                    0                                    1                                  0              
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   0                                                                                    1                                    1                                  0              
-  1                                                                                    1                                                                                    0                                    *NA*                               *NA*           
-  1                                                                                    1                                                                                    1                                    *NA*                               *NA*           
+  ### NOR-Based SR Latch
+
+|Inputs               |                     |                     |   |     |     | Expected next state    |   |Simulated Next State|
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|
+|                     |                     |                     |   |     |     |     |   |   |
+
+
+|          S          |          R          |          Q          |   |     | Q+  | Q'+ |   |   |   |   |   Q+ | Q'+ |     |
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|:-:|:-:|:----:|:---:|:---:|
+|          0          |          0          |          0          |   |     |  0  |  1  |   |   |   |   |      |     |     |
+|          0          |          0          |          1          |   |     |  1  |  0  |   |   |   |   |      |     |     |
+|          0          |![](media/image.png) |          0          |   |     |  0  |  1  |   |   |   |   |      |     |     |
+|          0          |![](media/image.png) |          1          |   |     |  0  |  1  |   |   |   |   |      |     |     |
+|![](media/image.png) |          0          |          0          |   |     |  1  |  0  |   |   |   |   |      |     |     |
+|![](media/image.png) |          0          |          1          |   |     |  1  |  0  |   |   |   |   |      |     |     |
+|          1          |          1          |          0          |   |     | N/A | N/A |   |   |   |   |      |     |     |
+|          1          |          1          |          1          |   |     | N/A | N/A |   |   |   |   |      |     |     |
+|                     |                     |                     |   |     |     |     |   |   |   |   |      |     |     |
+     
 
 > For the invalid input conditions in the above table, *NA* means "Not
 > Allowed".
->
+  
+
+
 > Build the NOR latch circuit in *Logisim*, simulate the circuit, and
 > record your results in the "Simulated Next State" column of the above
 > table. This time, use the actual simulated values of the outputs for
 > all cases (don't use *NA*).
 >
-> Use the following pin names in your *Logisim* circuit:
 
-  Input Pins      Output Pins
-  ------------ -- -------------
-                  
-  S\_NOR          Q\_NOR
-  R\_NOR          Qn\_NOR
+ Use the following pin names in your *Logisim* circuit:
 
-> Note that you will not be able to test latches and flip flops like you
+
+
+  |Input Pins|    |Output Pins|
+  |:--------:|:--:|:---------:|
+  |  S\_NOR  |    |  Q\_NOR   |
+  |  R\_NOR  |    |  Qn\_NOR  |
+  |          |    |           |
+
+
+
+> <span style="color:red;">Note that you will not be able to test latches and flip flops like you
 > did combinational logic (where you might have gone sequentially
 > through each line of the truth table). The output is not just
 > dependent on the setting of the inputs. The output is dependent on the
 > state of the inputs and the previous state of the output. You will
 > need to do some extra input manipulation (setting or clearing the
 > latch or flip flop) to get the Q output to what it needs to be to test
-> a particular input condition.
->
+> a particular input condition.</span>
+
+
 > You can verify the signals are connected correctly by testing your
 > circuit with the "NOR\_Latch\_test.txt" test vector file, but there is
 > no need to submit the results until all three latches are constructed.
 
-**NAND S'R' Latches**
+### **NAND S'R' Latches**
 
 > The NAND latch isn't discussed in the textbook, but it is simple to
 > draw the NAND latch from the NOR latch schematic. Simply replace the
 > NOR gates with NAND gates, change the *S*, *R* signals to *S'* and
 > *R'*, and swap the *Q* and *Q'* outputs as shown:
 
-![](media/image2.png){width="4.4154046369203845in"
-height="1.6222047244094489in"}
+![](media/SR_Latch.png)
 
 > The NAND latch input signals are complemented relative to the NOR
 > latch. The *S'* and *R'* signals of the NAND-based latch are normally
@@ -123,19 +136,23 @@ height="1.6222047244094489in"}
 > the outputs and fill out the "Expected Next State" column of the table
 > below (don't fill out the "Simulated" column yet):
 
-  NAND-Based S'R' Latch                                                                                                                                                                                                                                          
-  ------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------ --------------------------------- -- ---------------------------------- ------ -- -- --
-  Inputs (for brevity, Q' not shown)                                                                                                                                        Expected Next State of Q and Q'      Simulated Next State of Q and Q'                
-  S\_not                                                                               R\_not                                                                               Q                                    Q+                                 Q'+          
-                                                                                                                                                                                                                                                                 
-  0                                                                                    0                                                                                    0                                    *NA*                               *NA*         
-  0                                                                                    0                                                                                    1                                    *NA*                               *NA*         
-  ![](media/image3.png){width="0.2361111111111111in" height="0.20833333333333334in"}   1                                                                                    0                                                                                    
-  ![](media/image3.png){width="0.2361111111111111in" height="0.20833333333333334in"}   1                                                                                    1                                                                                    
-  1                                                                                    ![](media/image3.png){width="0.2361111111111111in" height="0.20833333333333334in"}   0                                                                                    
-  1                                                                                    ![](media/image3.png){width="0.2361111111111111in" height="0.20833333333333334in"}   1                                                                                    
-  1                                                                                    1                                                                                    0                                                                                    
-  1                                                                                    1                                                                                    1                                                                                    
+ ### NAND-Based S'R' Latch                                                                                                                                                                                                                                          
+|Inputs               |                     |                     |   |     |     | Expected next state    |   |Simulated Next State|
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|
+|                     |                     |                     |   |     |     |     |   |   |
+
+
+|        S_not        |        R_not        |          Q          |   |     | Q+  | Q'+ |   |   |   |   |   Q+ | Q'+ |     |
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|:-:|:-:|:----:|:---:|:---:|
+|          0          |          0          |          0          |   |     | N/A | N/A |   |   |   |   |      |     |     |
+|          0          |          0          |          1          |   |     | N/A | N/A |   |   |   |   |      |     |     |
+|![](media/image2.png)|          1          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|![](media/image2.png)|          1          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+|          1          |![](media/image2.png)|          0          |   |     |     |     |   |   |   |   |      |     |     |
+|          1          |![](media/image2.png)|          1          |   |     |     |     |   |   |   |   |      |     |     |
+|          1          |          1          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|          1          |          1          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+|                     |                     |                     |   |     |     |     |   |   |   |   |      |     |     |
 
 > For the invalid input conditions in the above table, *NA* means "Not
 > Allowed".
@@ -149,11 +166,11 @@ height="1.6222047244094489in"}
 >
 > Use the following pin names in your *Logisim* circuit:
 
-  Input Pins      Output Pins
-  ------------ -- -------------
-                  
-  Sn\_NAND        Q\_NAND
-  Rn\_NAND        Qn\_NAND
+  | Input Pins |    |Output Pins  |
+  |:----------:|:--:|:-----------:|
+  |  Sn\_NAND  |    |   Q\_NAND   |
+  |  Rn\_NAND  |    |   Qn\_NAND  |
+  |            |    |             |
 
 > Remember that you will need to do some extra \"button clicking\" to
 > get the *Q* output to the proper state on the input side of the
@@ -164,7 +181,7 @@ height="1.6222047244094489in"}
 > is no need to submit the results until all three latches are
 > constructed.
 
-**Gated D Latches**
+### **Gated D Latches**
 
 > Consider the Gated of Figure 15.7 of the textbook. The *S* and *R*
 > inputs are replaced by a single *D* input. The inverter eliminates any
@@ -183,18 +200,22 @@ height="1.6222047244094489in"}
 > fill out the "Simulated" column yet):
 
   Gated D-Latch                                                                                                                                                                      
-  ------------------------------------------------------------------------------------ --- ----------------------------------- -- ------------------------------------ ----- -- ---- -----
-  Inputs (for brevity, Q' not shown)                                                       Expected "Next State" of Q and Q'      Simulated "Next State" of Q and Q'                 
-  Gate                                                                                 D   Q                                      Q+                                   Q'+      Q+   Q'+
-                                                                                                                                                                                     
-  0                                                                                    0   0                                                                                         
-  0                                                                                    0   1                                                                                         
-  0                                                                                    1   0                                                                                         
-  0                                                                                    1   1                                                                                         
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   0   0                                                                                         
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   0   1                                                                                         
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   1   0                                                                                         
-  ![](media/image1.png){width="0.2361111111111111in" height="0.18055555555555555in"}   1   1                                                                                         
+ |Inputs               |                     |                     |   |     |     | Expected next state    |   |Simulated Next State|
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|
+|                     |                     |                     |   |     |     |     |   |   |
+
+
+|        Gate         |          D         |          Q          |   |     | Q+  | Q'+ |   |   |   |   |   Q+ | Q'+ |     |
+|:-------------------:|:-------------------:|:-------------------:|:-:|:---:|:---:|:---:|:-:|:-:|:-:|:-:|:----:|:---:|:---:|
+|          0          |          0          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|          0          |          0          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+|          0          |          1          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|          0          |          1          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+|![](media/image.png) |          0          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|![](media/image.png) |          0          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+|![](media/image.png) |          1          |          0          |   |     |     |     |   |   |   |   |      |     |     |
+|![](media/image.png) |          1          |          1          |   |     |     |     |   |   |   |   |      |     |     |
+
 
 > After you predict the expected outputs, build the NAND latch circuit
 > in the same *Logisim* circuit file as the NOR latch (there is no need
@@ -203,11 +224,11 @@ height="1.6222047244094489in"}
 > simulated values of the outputs for all cases (don't use *NA*). Use
 > the following pin names in your *Logisim* circuit:
 
-  Input Pins      Output Pins
-  ------------ -- -------------
-                  
-  Gate            Q\_GateD
-  D               Qn\_GateD
+  | Input Pins |    |Output Pins   |
+  |:----------:|:--:|:------------:|
+  |     Gate   |    |   Q\_GateD   |
+  |      D     |    |   Qn\_GateD  |
+  |            |    |              |
 
 > Remember that you will need to do some extra \"button clicking\" to
 > get the *Q* output to what it needs to be to test a particular input
@@ -219,25 +240,25 @@ height="1.6222047244094489in"}
 > Test your three latches together using the "Latches\_test.txt" test
 > vector file, and paste your results in the box below:
 
-  --
-  --
+>![](Your_Screenshot_here.png)
+
 
 Three-Latch test results (10 points)
 
 > Paste your *Logisim* circuit (including your name) in the box below.
 > Remember, this design will have all 3 latches (without subcircuits):
 
-  --
-  --
+>![](Your_Screenshot_here.png)
 
 Three-Latch *Logisim* Circuit (10 points)
 
-**\*\*\* Take Lab8 Quiz 1 \*\*\***
+## <span style="color:red;">**\*\*\* Take Lab8 Quiz 1 \*\*\*** **(Worth 20 points)**</span>
 
-**(Worth 20 points)\
-**
+</br>
 
-**Part 2 -- Flip Flops**
+</br>
+
+# **Part 2 -- Flip Flops**
 
 **D Flip Flop Circuit**
 
@@ -246,15 +267,18 @@ Three-Latch *Logisim* Circuit (10 points)
 > in your "Expected Next State" data in the table below (don't enter the
 > "Simulated Next State" data yet.
 
-  D Flip Flop                                                                        
-  ------------------------------------ --- --------------------------------- -- ---- -----
-  Inputs (for brevity, Q' not shown)       Expected Next State of Q and Q'           
-  CLK                                  D   Q                                    Q+   Q'+
-                                                                                     
-  ↑                                    0   0                                         
-  ↑                                    0   1                                         
-  ↑                                    1   0                                         
-  ↑                                    1   1                                         
+### D Flip Flop
+
+
+|Inputs|     |     |    Expected Next | | |
+|:----:|:---:|:---:|:-:|:----:|:-----:|
+
+| CLK |  D  |  Q  |   |  Q+  |  Q'+  |
+|:---:|:---:|:---:|:-:|:----:|:-----:|
+|  ↑  |  0  |  0  |   |      |       |
+|  ↑  |  0  |  1  |   |      |       |
+|  ↑  |  1  |  0  |   |      |       |
+|  ↑  |  1  |  1  |   |      |       |
 
 > In this half of the lab, you will create a new *Logisim* file. You
 > won't need to build your own D flip flop out of AND, OR, and NOT
@@ -263,17 +287,13 @@ Three-Latch *Logisim* Circuit (10 points)
 > that you connect the *S* and *R* pins. Leave them disconnected for
 > now.
 
--   Connect the clock input (the input with the triangle) to a clock
-    > source from the wiring menu, and name the clock pin *"clk"*:
+-   Connect the clock input (the input with the triangle) to a clock source from the wiring menu, and name the clock pin *"clk"*:
 
-![](media/image4.png){width="1.7204297900262466in"
-height="2.3333333333333335in"}
+![](media/image4.png)
 
--   Connect the *D* input of the flip flop to a regular input pin and
-    > call this signal, *"D".*
+-   Connect the *D* input of the flip flop to a regular input pin and call this signal, *"D".*
 
--   Connect the output pins, *Q* and *Q\'* to regular output pins called
-    > *"Q"* and *"Qn"*.
+-   Connect the output pins, *Q* and *Q\'* to regular output pins called *"Q"* and *"Qn"*.
 
 > The clock pin is unique in Logisim because it is capable of
 > automatically cycling through the 1-0-1-0... sequence at the frequency
@@ -286,44 +306,43 @@ height="2.3333333333333335in"}
 >
 > Do the following tests on the flip flop circuit:
 
--   With your clock "free running" at 1Hz, observe what happens when you
-    > change the *D* input from 0 to 1 and back again.
+-   With your clock "free running" at 1Hz, observe what happens when you change the *D* input from 0 to 1 and back again.
 
--   With the *D* input set to 1 and the clock running at 1Hz, observe
-    > what happens when you connect the *R* input of the flip flop to an
-    > input pin and manipulate its value from 0-1-0-1....
+-   With the *D* input set to 1 and the clock running at 1Hz, observe what happens when you connect the *R* input of the flip flop to an input pin and manipulate its value from 0-1-0-1....
 
--   With the *D* input set to 0, *R* set to 0, and the clock running at
-    > 1Hz, observe what happens when you connect the *S* input of the
-    > flip flop to an input pin and manipulate is value from 0-1-0-1...
+-   With the *D* input set to 0, *R* set to 0, and the clock running at 1Hz, observe what happens when you connect the *S* input of the flip flop to an input pin and manipulate is value from 0-1-0-1...
 
--   Observe what happens when you simultaneously set the *R* and *S*
-    > pins to 1 (which one wins?).
+-   Observe what happens when you simultaneously set the *R* and *S* pins to 1 (which one wins?).
 
 ***D Flip Flop* Toggle Circuit**
 
 > Construct a toggle circuit using a D flip flop in Logisim and examine
 > its behavior. Section 15.3 of the textbook shows such a circuit:
-
-![](media/image5.tiff){width="0.9583333333333334in"
-height="1.0681419510061243in"}
+>
+>![](media/image5.png)
 
 > Note that the above circuit uses a negative edge triggered *D flip
 > flop*. For your implementation, use the positive edge triggered
 > Logisim *D flip flop* instead. Also, the circuit shows an inverter
 > connected from the *Q* output to the *D* input. You can simply use the
 > *Q'* output without the inverter.
->
+
+</br>
+</br>
+
 > Verify that the toggle circuit behaves as shown in the timing diagram:
 >
-> ![](media/image6.png){width="2.9916666666666667in"
-> height="0.5756867891513561in"}
+> ![](media/image6.png)
 >
 > This toggle circuit divides a frequency by 2. In other words, the
 > frequency seen at the Q output is half that see at the clock input.
->
-> *Logisim Evolution* has the capability of showing you a timing diagram
-> similar to the one above. To do this:
+
+
+</br>
+</br>
+
+*Logisim Evolution* has the capability of showing you a timing diagram
+similar to the one above. To do this:
 
 -   Add one additional clock pin from the wiring menu, and name this pin
     "sysclk". Don't connect this clock to anything, it will be used as a
@@ -334,36 +353,36 @@ height="1.0681419510061243in"}
 -   Add one signal at a time to the right-side of the menu as shown. You
     will only need *clk*, *Q*, and s*ysclk*:
 
-![](media/image7.tiff){width="3.1171872265966756in"
-height="2.1435312773403323in"}
+![](media/image7.png)
 
--   Select "Start Chronogram"
+>-   Select "Start Chronogram"
+>-   Each time you click on the clock button (shown below) the waveform will advance ½ clock cycle.
+>
+>![](media/image8.png)
 
--   Each time you click on the clock button (shown below) the waveform
-    will advance ½ clock cycle.
 
-![](media/image8.tiff){width="0.7777777777777778in"
-height="0.6944444444444444in"}
+</br>
+</br>
 
 > Paste your Chronogram timing diagram of the Toggle circuit in the box
 > below:
+>
 
-  --
-  --
+>![](Your_Screenshot_here.png)
 
 Timing Diagram of the Toggle Circuit (10 points)
 
 > Paste your *Logisim* circuit of your flip flop and toggle circuit
 > (including your name) in the box below:
 
-  --
-  --
+>![](Your_Screenshot_here.png)
+
 
 Flip Flop Circuits (10 points)
 
-\*\*\*Take Lab8 Quiz 2\*\*\*
+## <span style="color:red;">\*\*\*Take Lab8 Quiz 2\*\*\* (Worth 10 points)</span>
 
-(Worth 10 points)
+
 
 **Part 3 -- SystemVerilog Flip Flops**
 
@@ -375,8 +394,7 @@ Flip Flop Circuits (10 points)
 > Paste your module that contains the *flip flop "always\_ff" statement
 > in the box* below:
 
-  --
-  --
+>![](Your_Screenshot_here.png)
 
 Flip Flop Module Code (10 points)
 
@@ -389,22 +407,19 @@ Flip Flop Module Code (10 points)
 > Write a brief conclusions statement that discusses the original
 > purposes of the lab found at the beginning of this lab document.
 
--   What are some of your observations about: SR Latches, Gated D
-    > Latches, and D Flip Flops?
+-   What are some of your observations about: SR Latches, Gated D Latches, and D Flip Flops?
 
--   What are some or your observations about reading and implementing
-    > transition tables?
+-   What are some or your observations about reading and implementing transition tables?
 
--   What are your observations about implementing flip flops
-    > behaviorally in SystemVerilog?
+-   What are your observations about implementing flip flops behaviorally in SystemVerilog?
 
 > Please use complete sentences and correct grammar to express your
 > thoughts:
-
-(The conclusions box will expand as you write)
-
-  --
-  --
+>
+>
+>
+>
+>
 
 Conclusions Statement (10 points)
 
