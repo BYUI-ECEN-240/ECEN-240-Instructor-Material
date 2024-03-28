@@ -12,6 +12,10 @@ This repository contains the material and instructions for students enrolled in 
 * [LAB 5: **\"Road Ripper\" Intro to System Verilog** Instructions](ECEN240_Lab5/ECEN240_Lab5_Road_Ripper.docx)
     * [**Vivado Tutorial** Instructions](ECEN240_Lab5/ECEN240_Lab_5_Vivado_Tutorial.md)
 * [LAB 6: **ALU and Multiplexors** Instructions](ECEN240_Lab6/ECEN240_Lab6_ALU_and_Multiplexers.md)
+* [LAB 8: **Latches and FlipFlops** Instructions](ECEN240_Lab8/ECEN240_Lab8_Latches_and_FlipFlops.md)
+* [LAB 9: **** Instructions](ECEN240_Lab9/ECEN240_Lab9_Register_File.md)
+    * [**System Verilog Instructions** Instructions](ECEN240_Lab9/ECEN240_Lab9_SystemVerilog_Instructions.md)
+* [LAB 10: **Counters** Instructions](ECEN240_Lab10/ECEN240_Lab10_Counters.md)
 
 ### For Instructors
 * [Comments](#comments)
