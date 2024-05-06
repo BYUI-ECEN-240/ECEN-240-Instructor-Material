@@ -1,0 +1,15 @@
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ECEN240_Final_Project
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ECEN240_Final_Project.deps.json
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ECEN240_Final_Project.runtimeconfig.json
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ECEN240_Final_Project.dll
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ref/ECEN240_Final_Project.dll
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/bin/Debug/net6.0/ECEN240_Final_Project.pdb
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.csproj.AssemblyReference.cache
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.AssemblyInfoInputs.cache
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.AssemblyInfo.cs
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.csproj.CoreCompileInputs.cache
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.dll
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ref/ECEN240_Final_Project.dll
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.pdb
+/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/obj/Debug/net6.0/ECEN240_Final_Project.genruntimeconfig.cache
