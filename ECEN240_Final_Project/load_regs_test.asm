@@ -1,0 +1,8 @@
+LD R0, 0
+LD R1, 1
+LD R2, 2
+LD R3, 3
+LD R4, 4
+LD R5, 5
+LD R6, 6
+LD R7, 7
