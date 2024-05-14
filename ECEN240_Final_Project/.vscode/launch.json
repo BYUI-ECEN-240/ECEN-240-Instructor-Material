@@ -10,7 +10,9 @@
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": ["load_regs_test.asm"],
-      "preLaunchTask": "build" // Adjust if you have a separate build task
+      "preLaunchTask": "build", // Adjust if you have a separate build task
+      "cwd": "${workspaceFolder}",  // Set working directory to workspace root
+      "MIDebuggerPath": "/path/to/gdb"  // Replace with your GDB path
     }
   ]
 }

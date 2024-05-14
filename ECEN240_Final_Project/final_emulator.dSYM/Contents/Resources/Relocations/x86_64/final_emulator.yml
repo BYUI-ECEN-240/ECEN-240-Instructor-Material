@@ -2,13 +2,13 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/lynnrwatson/Repositories/ECEN-240/ECEN-240-Labs/ECEN240_Final_Project/final_emulator'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _getOpcodeType, symObjAddr: 0x0, symBinAddr: 0x100000A50, symSize: 0x70 }
-  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _pc, symObjAddr: 0x1784, symBinAddr: 0x100002050, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: _mnemonics, symObjAddr: 0x530, symBinAddr: 0x100002000, symSize: 0x0 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _getOpcodeType, symObjAddr: 0x0, symBinAddr: 0x1000009F0, symSize: 0x90 }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _pc, symObjAddr: 0x1828, symBinAddr: 0x100002050, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: _mnemonics, symObjAddr: 0x580, symBinAddr: 0x100002000, symSize: 0x0 }
   - { offsetInCU: 0x94, offset: 0x94, size: 0x8, addend: 0x0, symName: _regs, symBinAddr: 0x1000020D0, symSize: 0x0 }
   - { offsetInCU: 0xB5, offset: 0xB5, size: 0x8, addend: 0x0, symName: _display, symBinAddr: 0x100002060, symSize: 0x0 }
-  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _getOpcodeType, symObjAddr: 0x0, symBinAddr: 0x100000A50, symSize: 0x70 }
-  - { offsetInCU: 0x160, offset: 0x160, size: 0x8, addend: 0x0, symName: _parseOpcode, symObjAddr: 0x70, symBinAddr: 0x100000AC0, symSize: 0xA0 }
-  - { offsetInCU: 0x1B2, offset: 0x1B2, size: 0x8, addend: 0x0, symName: _executeOpcode, symObjAddr: 0x110, symBinAddr: 0x100000B60, symSize: 0x160 }
-  - { offsetInCU: 0x1E4, offset: 0x1E4, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x270, symBinAddr: 0x100000CC0, symSize: 0x203 }
+  - { offsetInCU: 0x11C, offset: 0x11C, size: 0x8, addend: 0x0, symName: _getOpcodeType, symObjAddr: 0x0, symBinAddr: 0x1000009F0, symSize: 0x90 }
+  - { offsetInCU: 0x160, offset: 0x160, size: 0x8, addend: 0x0, symName: _parseOpcode, symObjAddr: 0x90, symBinAddr: 0x100000A80, symSize: 0xA0 }
+  - { offsetInCU: 0x1B2, offset: 0x1B2, size: 0x8, addend: 0x0, symName: _executeOpcode, symObjAddr: 0x130, symBinAddr: 0x100000B20, symSize: 0x160 }
+  - { offsetInCU: 0x1E4, offset: 0x1E4, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x290, symBinAddr: 0x100000C80, symSize: 0x217 }
 ...

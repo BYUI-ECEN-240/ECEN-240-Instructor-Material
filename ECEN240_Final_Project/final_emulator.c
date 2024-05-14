@@ -31,6 +31,7 @@ int pc = 0;            // Program counter
 const char *mnemonics[] = {"NOP", "LD", "MOV", "DISP", "XOR", "AND", "OR", "ADD", "SUB"};
 
 OpcodeType getOpcodeType(const char *instruction) {
+    printf("getopcode: %s\n\r",instruction);
     for (int i = 0; i < sizeof(mnemonics) / sizeof(mnemonics[0]); i++) {
         if (strcmp(instruction, mnemonics[i]) == 0) {
             return i;
@@ -102,6 +103,7 @@ int main(int argc, char *argv[]) {
         // Process each line of code
         int operands[MAX_INSTRUCTION_LENGTH];
         OpcodeType type = getOpcodeType(code);
+        printf("Opcode type is: %u\n\r",type);
         int numOperands = parseOpcode(code, operands);
 
         if (type != INVALID && numOperands >= 1 && numOperands <= MAX_INSTRUCTION_LENGTH) {
