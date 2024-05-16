@@ -30,17 +30,31 @@ int pc = 0;            // Program counter
 
 const char *mnemonics[] = {"NOP", "LD", "MOV", "DISP", "XOR", "AND", "OR", "ADD", "SUB"};
 
+
+void cut_at_first_whitespace(char str[]) {
+    int i = 0;
+    while (str[i] != '\0' && str[i] != ' ' && str[i] != '\t') {
+        i++;
+    }
+    str[i] = '\0'; // Terminate the string at the first whitespace
+}
+
+
 OpcodeType getOpcodeType(const char *instruction) {
     printf("getopcode: %s\n\r",instruction);
-    for (int i = 0; i < sizeof(mnemonics) / sizeof(mnemonics[0]); i++) {
-        if (strcmp(instruction, mnemonics[i]) == 0) {
+    char theOpcode[100];
+    strcpy(theOpcode,instruction);
+    cut_at_first_whitespace(theOpcode);
+    for (int i = 0; i < sizeof(mnemonics) ; i++) {
+        if (strcmp(theOpcode, mnemonics[i]) == 0) {
             return i;
         }
     }
     return INVALID;
 }
 
-int parseOpcode(const char *instruction, int *operands) {
+
+int parseOperands(const char *instruction,int *operands) {
     int numOperands = 0;
     char *token = strtok((char *)instruction, ", ");
     while (token && numOperands < MAX_INSTRUCTION_LENGTH) {
@@ -51,8 +65,8 @@ int parseOpcode(const char *instruction, int *operands) {
     return numOperands;
 }
 
-void executeOpcode(OpcodeType type, int operands[MAX_INSTRUCTION_LENGTH]) {
-    switch (type) {
+void executeOpcode(OpcodeType theOpcode, int operands[MAX_INSTRUCTION_LENGTH]) {
+    switch (theOpcode) {
         case NOP:
             break;
         case LD:
@@ -80,7 +94,7 @@ void executeOpcode(OpcodeType type, int operands[MAX_INSTRUCTION_LENGTH]) {
             break;
         // Add cases for XOR, AND, OR, ADD, SUB
         default:
-            // Handle invalid instruction type
+            // Handle invalid instruction theOpcode
             break;
     }
 }
@@ -102,12 +116,12 @@ int main(int argc, char *argv[]) {
     while (fgets(code, sizeof(code), codeFile) != NULL) {
         // Process each line of code
         int operands[MAX_INSTRUCTION_LENGTH];
-        OpcodeType type = getOpcodeType(code);
-        printf("Opcode type is: %u\n\r",type);
-        int numOperands = parseOpcode(code, operands);
+        OpcodeType theOpcode = getOpcodeType(code);
+        printf("Opcode theOpcode is: %u\n\r",theOpcode);
+        int numOperands = parseOperands(code, &operands);
 
-        if (type != INVALID && numOperands >= 1 && numOperands <= MAX_INSTRUCTION_LENGTH) {
-            executeOpcode(type, operands);
+        if (theOpcode != INVALID && numOperands >= 1 && numOperands <= MAX_INSTRUCTION_LENGTH) {
+            executeOpcode(theOpcode, operands);
             pc++;  // Increment program counter after successful execution
         } else {
             // Handle invalid instruction or

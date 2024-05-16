@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ECEN240_Final_Project",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ECEN240_Final_Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ECEN240_Final_Project-Debug-27ed55d2584ad22b1886.json",
+					"name" : "ECEN240_Final_Project",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project/cmake-build-debug",
+		"source" : "/Users/lynn/Documents/Repositories/ECEN-240/ECEN-240-Instructor-Material/ECEN240_Final_Project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
