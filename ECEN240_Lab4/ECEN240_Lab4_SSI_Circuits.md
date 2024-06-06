@@ -147,8 +147,6 @@ ___
 -   Download the test file called "SSI\_test.txt" found in the Lab 4
     module in *ILearn*.
 
--   Place the file in your *Logisim Evolution* folder.
-
 -   Run the "Test Vector" tool from the "Simulate" menu of *Logisim
     Evolution*.
 
